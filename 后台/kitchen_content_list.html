@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>厨房百科信息列表</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/amazeui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/log_index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/admin_add.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/amazeui.min.js"></script>
+	</head>
+	<body>
+		<div class="am-topbar topbar topbar_zipad">
+			<span class="topbar_zi">美食姬后台管理系统</span>
+			<div class="admin">
+				<span>admin</span>&nbsp;
+				<a href="login.html" style="color:white;">退出登录</a>
+			</div>
+		</div>
+		<div>
+			<div class="div1">
+				<ul class="am-list admin-sidebar-list" id="collapase-nav-1">
+				  	<li class="am-panel">
+					    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#admin'}" class="slide">
+					        <i class="am-icon-user am-margin-left-sm"></i> 管理员帐号管理 <i class="am-icon-angle-down am-fr am-margin-right"></i>
+					    </a>
+					    <ul class="am-list am-collapse admin-sidebar-sub" id="admin">
+					        <li><a href="admin_add.html"><i class="am-icon-circle am-margin-left-sm"></i> 创建帐号 </a></li>
+					        <li><a href="admin_change.html"><i class="am-icon-circle am-margin-left-sm"></i> 修改帐号密码 </a></li>
+					        <li><a href="admin_list.html"><i class="am-icon-circle am-margin-left-sm"></i> 帐号列表 </a></li>
+					    </ul>
+				  	</li>
+				  	<li class="am-panel">
+					    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#users'}" class="slide">
+					        <i class="am-icon-user am-margin-left-sm"></i> 用户帐号管理 <i class="am-icon-angle-down am-fr am-margin-right"></i>
+					    </a>
+					    <ul class="am-list am-collapse admin-sidebar-sub" id="users">
+					        <li><a href="user_list.html"><span class="am-icon-circle am-margin-left-sm"></span> 帐号列表 </a></li>
+					    </ul>
+				  	</li>
+				  	<li class="am-panel">
+					    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#recipe'}" class="slide">
+					        <i class="am-icon-file-image-o am-margin-left-sm"></i> 菜谱管理 <i class="am-icon-angle-down am-fr am-margin-right"></i>
+					    </a>
+					    <ul class="am-list am-collapse admin-sidebar-sub" id="recipe">
+					        <li><a href="recipe_category_add.html"><span class="am-icon-circle am-margin-left-sm"></span> 添加分类 </a></li>
+					        <li><a href="recipe_category_list.html"><span class="am-icon-circle am-margin-left-sm"></span> 分类列表 </a></li>
+					        <li><a href="recipe_list.html"><span class="am-icon-circle am-margin-left-sm"></span> 菜谱列表 </a></li>
+					    </ul>
+				  	</li>
+				  	<li class="am-panel">
+					    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#dian-recipe'}" class="slide">
+					        <i class="am-icon-file-image-o am-margin-left-sm"></i> 店家分享管理 <i class="am-icon-angle-down am-fr am-margin-right"></i>
+					    </a>
+					    <ul class="am-list am-collapse admin-sidebar-sub" id="dian-recipe">
+					        <li><a href="restaurant_list.html"><span class="am-icon-circle am-margin-left-sm"></span> 店家列表 </a></li>
+					        <li><a href="restaurant_recipe_list.html"><span class="am-icon-circle am-margin-left-sm"></span> 店家菜谱列表 </a></li>
+					    </ul>
+				  	</li>
+				  	<li class="am-panel">
+					    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#chu'}" class="slide">
+					        <i class="am-icon-list-alt am-margin-left-sm"></i> 厨房百科信息管理 <i class="am-icon-angle-down am-fr am-margin-right"></i>
+					    </a>
+					    <ul class="am-list am-collapse admin-sidebar-sub" id="chu">
+					        <li><a href="kitchen_category_add.html"><span class="am-icon-circle am-margin-left-sm"></span> 添加分类 </a></li>
+					        <li><a href="kitchen_category_list.html"><span class="am-icon-circle am-margin-left-sm"></span> 分类列表 </a></li>
+					        <li><a href="kitchen_content_add.html"><span class="am-icon-circle am-margin-left-sm"></span> 添加信息 </a></li>
+					        <li><a href="kitchen_content_list.html"><span class="am-icon-circle am-margin-left-sm"></span> 信息列表 </a></li>
+					    </ul>
+				  	</li>
+				  	<li class="am-panel">
+					    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#yin'}" class="slide">
+					        <i class="am-icon-list-alt am-margin-left-sm"></i> 饮食健康信息管理 <i class="am-icon-angle-down am-fr am-margin-right"></i>
+					    </a>
+					    <ul class="am-list am-collapse admin-sidebar-sub" id="yin">
+					        <li><a href="health_category_add.html"><span class="am-icon-circle am-margin-left-sm"></span> 添加分类 </a></li>
+					        <li><a href="health_category_list.html"><span class="am-icon-circle am-margin-left-sm"></span> 分类列表 </a></li>
+					        <li><a href="health_content_add.html"><span class="am-icon-circle am-margin-left-sm"></span> 添加信息 </a></li>
+					        <li><a href="health_content_list.html"><span class="am-icon-circle am-margin-left-sm"></span> 信息列表 </a></li>
+					    </ul>
+				  	</li>
+				  	<li class="am-panel">
+					    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#ping'}" class="slide">
+					        <i class="am-icon-smile-o am-margin-left-sm"></i> 评论管理 <i class="am-icon-angle-down am-fr am-margin-right"></i>
+					    </a>
+					    <ul class="am-list am-collapse admin-sidebar-sub" id="ping">
+					        <li><a href="comment.html"><span class="am-icon-circle am-margin-left-sm"></span> 评论列表 </a></li>
+					    </ul>
+				  	</li>
+				  	<li class="am-panel">
+					    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#tie'}" class="slide">
+					        <i class="am-icon-tags am-margin-left-sm"></i> 发帖管理 <i class="am-icon-angle-down am-fr am-margin-right"></i>
+					    </a>
+					    <ul class="am-list am-collapse admin-sidebar-sub" id="tie">
+					        <li><a href="post.html"><span class="am-icon-circle am-margin-left-sm"></span> 贴子列表 </a></li>
+					    </ul>
+				  	</li>
+				  	<li class="am-panel">
+					    <a data-am-collapse="{parent: '#collapase-nav-1', target: '#friend'}" class="slide">
+					        <i class="am-icon-link am-margin-left-sm"></i> 友情链接管理 <i class="am-icon-angle-down am-fr am-margin-right"></i>
+					    </a>
+					    <ul class="am-list am-collapse admin-sidebar-sub" id="friend">
+					        <li><a href="link_add.html"><span class="am-icon-circle am-margin-left-sm"></span> 添加友情链接 </a></li>
+					        <li><a href="link_list.html"><span class="am-icon-circle am-margin-left-sm"></span> 友情链接列表 </a></li>
+					    </ul>
+				  	</li>
+				</ul>
+			</div>
+			<div class="div2_3">
+				<div class="hd">厨房百科信息列表</div>
+				<a href="kitchen_content_add.html"><button class="button button_add">&nbsp;添加信息&nbsp;</button></a>
+				<button class="button button_add">&nbsp;批量删除&nbsp;</button>
+			
+				<div class="am-input-group search">
+					<input type="text" name="username" class="search1">
+					<button class="search2 button">搜&nbsp;索</button>
+				</div>
+			
+				<div class="bd_list">
+					<table class="am-table am-table-bordered am-table-radius am-table-striped am-table-centered">
+						<tr class="tablefonta">
+							<td style="width:8%;"><input type="checkbox" name="check_all">&nbsp;全选</td>
+							<td>ID</td>
+							<td>标题</td>
+							<td>内容</td>
+							<td style="width:30%;">图片</td>
+							<td>操作</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check_all"></td>
+							<td>1</td>
+							<td>苹果</td>
+							<td>苹果是蔷薇科(Rosaceae)苹果属(malus)植物的果实，该属约25种</td>
+							<td><img src="images/3.jpg" width="40%;"></td>
+							<td><a href=""><i class="am-icon-trash"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check_all"></td>
+							<td>2</td>
+							<td>苹果</td>
+							<td>苹果是蔷薇科(Rosaceae)苹果属(malus)植物的果实，该属约25种</td>
+							<td><img src="images/3.jpg" width="40%;"></td>
+							<td><a href=""><i class="am-icon-trash"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check_all"></td>
+							<td>3</td>
+							<td>苹果</td>
+							<td>苹果是蔷薇科(Rosaceae)苹果属(malus)植物的果实，该属约25种</td>
+							<td><img src="images/3.jpg" width="40%;"></td>
+							<td><a href=""><i class="am-icon-trash"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check_all"></td>
+							<td>4</td>
+							<td>苹果</td>
+							<td>苹果是蔷薇科(Rosaceae)苹果属(malus)植物的果实，该属约25种</td>
+							<td><img src="images/3.jpg" width="40%;"></td>
+							<td><a href=""><i class="am-icon-trash"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check_all"></td>
+							<td>5</td>
+							<td>苹果</td>
+							<td>苹果是蔷薇科(Rosaceae)苹果属(malus)植物的果实，该属约25种</td>
+							<td><img src="images/3.jpg" width="40%;"></td>
+							<td><a href=""><i class="am-icon-trash"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check_all"></td>
+							<td>6</td>
+							<td>苹果</td>
+							<td>苹果是蔷薇科(Rosaceae)苹果属(malus)植物的果实，该属约25种</td>
+							<td><img src="images/3.jpg" width="40%;"></td>
+							<td><a href=""><i class="am-icon-trash"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check_all"></td>
+							<td>7</td>
+							<td>苹果</td>
+							<td>苹果是蔷薇科(Rosaceae)苹果属(malus)植物的果实，该属约25种</td>
+							<td><img src="images/3.jpg" width="40%;"></td>
+							<td><a href=""><i class="am-icon-trash"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check_all"></td>
+							<td>8</td>
+							<td>苹果</td>
+							<td>苹果是蔷薇科(Rosaceae)苹果属(malus)植物的果实，该属约25种</td>
+							<td><img src="images/3.jpg" width="40%;"></td>
+							<td><a href=""><i class="am-icon-trash"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check_all"></td>
+							<td>9</td>
+							<td>苹果</td>
+							<td>苹果是蔷薇科(Rosaceae)苹果属(malus)植物的果实，该属约25种</td>
+							<td><img src="images/3.jpg" width="40%;"></td>
+							<td><a href=""><i class="am-icon-trash"></i>删除</a></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="check_all"></td>
+							<td>10</td>
+							<td>苹果</td>
+							<td>苹果是蔷薇科(Rosaceae)苹果属(malus)植物的果实，该属约25种</td>
+							<td><img src="images/3.jpg" width="40%;"></td>
+							<td><a href=""><i class="am-icon-trash"></i>删除</a></td>
+						</tr>
+					</table>
+				</div>
+				<div class="amb">
+					<ul class="am-pagination">
+						<li class="am-disabled"><a href="#">&laquo;</a></li>
+						<li class="am-active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
