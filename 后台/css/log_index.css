@@ -1,0 +1,55 @@
+.topbar{ 
+	background-color: #46A3FF;
+	height: 60px;
+}
+.topbar_zi{ 
+	color: white;
+	font-size: 28px;
+	text-shadow:1px 1px 0px black; 
+}
+.topbar_zipad{ 
+	padding-top: 6px;
+	padding-left: 3%;
+}
+.admin{ 
+	float: right;
+	margin-right: 2%;
+}
+.slide{ 
+	background-color: #46A3FF;
+	color: white;
+}
+.div1{ 
+	width:18%;
+	float:left;
+}
+.div2{ 
+	width:82%;
+	height:700px;
+	border:1px solid #46A3FF;
+	float:left;
+}
+.div2_1{ 
+	width:82%;
+	height:1100px;
+	border:1px solid #46A3FF;
+	float:left;
+}
+.div2_2{ 
+	width:82%;
+	height:1700px;
+	border:1px solid #46A3FF;
+	float:left;
+}
+.div2_3{ 
+	width:82%;
+	height:1300px;
+	border:1px solid #46A3FF;
+	float:left;
+}
+.welcome{ 
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 10%;
+}
