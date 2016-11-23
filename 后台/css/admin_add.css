@@ -1,0 +1,54 @@
+.hd{ 
+	font-size: 22px;
+	font-weight: bold;
+	margin-left: 2%;
+}
+.bd{ 
+	margin: 4% 5% 4% 6%;
+}
+.bd_table{ 
+	width: 40%;
+}
+.bd_table2{ 
+	width:50%;
+}
+.bd_table3{ 
+	width:80%;
+}
+.bd_table4{ 
+	width:20%;
+}
+.bd_table_tr{ 
+	background-color:#E0E0E0;
+}
+.bg_table_input{ 
+	width:100%;
+}
+.button{ 
+	background-color: #46A3FF;
+	border-radius:5px;
+	color: white;
+}
+.button_add{ 
+	margin: 2% 0 0 2%;
+}
+.bd_list{ 
+	margin: 2% 2% 2% 2%;
+}
+.tablefonta{ 
+	font-weight: bold;
+}
+.search{ 
+	float: right;
+	margin: 2% 2% 0 0;
+}
+.search1{ 
+	border-radius: 3px;
+}
+.search2{ 
+	border-radius: 3px;
+}
+.amb{ 
+	float: right;
+	margin: 1% 2% 0 0
+}
