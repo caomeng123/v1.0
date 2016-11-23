@@ -1,0 +1,62 @@
+.topbar{ 
+	background-color: #46A3FF;
+	height: 60px;
+}
+.topbar_zi{ 
+	color: white;
+	font-size: 28px;
+	text-shadow:1px 1px 0px black; 
+}
+.topbar_zipad{ 
+	padding-top: 6px;
+	padding-left: 3%;
+}
+.login_bg{ 
+	height: 290px;
+	border: 1px solid #BEBEBE;
+	width: 34%;
+	margin: 0 auto;
+	margin-top: 70px;
+	border-radius: 10px;
+}
+.login_hd{ 
+	height: 48px;
+	background-color: #46A3FF;
+	border-radius: 10px 10px 0px 0px;
+	padding-top: 9px;
+	padding-left: 3%;
+}
+.login_hd_zi{ 
+	color: white;
+	font-size: 18px;
+}
+.login_bd{ 
+	margin-left: 10%;
+	margin-top: 20px;
+	font-family: '宋体';
+}
+.aa{ 
+	font-size: 14px;
+}
+.username1{ 
+	border-radius: 3px 0px 0px 3px;
+}
+.username2{ 
+	border-radius: 0px 3px 3px 0px;
+	width: 70%;
+}
+.yanzheng{ 
+	border-radius: 0px 3px 3px 0px;
+	width: 30%;
+}
+img{ 
+	width: 30%;
+	margin-left: 8%;
+}
+.login_in{ 
+	background-color: #46A3FF;
+	color: white;
+	margin-left: 10%;
+	margin-top: 18px;
+	border-radius:5px;
+}
