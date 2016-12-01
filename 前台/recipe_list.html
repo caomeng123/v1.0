@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>美食姬</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/amazeui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/amazeui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/pageGroup.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/pageGroup.js"></script>
+	</head>
+	<body>
+		<div class="top">
+			<div class="top_center">
+				<div class="logo">
+					<img src="images/logo.jpg" class="logo_image">
+				</div>
+				<div class="search">
+					<div class="search1">
+						<input type="text" class="search_input">
+						<a href="#"><button class="search_search">&nbsp;&nbsp;搜&nbsp;索&nbsp;&nbsp;</button></a>
+					</div>
+				</div>
+				<div class="login">
+					<a href="#">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">注册</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_center">
+				<ul class="am-nav am-nav-pills am-nav-justify nav_a">
+					<li class="nav_a_index"><a href="index.html">首页</a></li>
+					<li><a href="recipe_list.html">菜谱大全</a></li>
+					<li><a href="restaurant_list.html">店家分享</a></li>
+					<li><a href="kitchen_list.html">厨房百科</a></li>
+					<li><a href="health_list.html">饮食健康</a></li>
+					<li><a href="chat_list.html">讨论区</a></li>					
+				</ul>
+			</div>
+		</div> 
+
+		<div class="recipe_list_page">
+			<div class="recipe_list_page_bread">
+				<ul class="am-breadcrumb am-breadcrumb-slash">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="recipe_list.html">菜谱大全</a></li>
+				</ul>
+			</div>
+			<div class="recipe_list_page_title">
+				<div class="recipe_list_page_category_title">菜谱分类</div>
+				<ul class="am-nav recipe_list_page_category_content">
+					<button class="am-btn am-icon-chevron-up recipe_list_page_category_button_up" id="btn-pre"></button>
+					<div style="height:315px;overflow:scroll;overflow-y:hidden" id="flow">
+					<li style="margin-top:10%;"><a href="#" style="color:black">家常菜谱</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">中华料理</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">外国料理</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">各地小吃</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">烘焙</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">糕点</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">甜点</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">家常菜谱</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">中华料理</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">外国料理</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">各地小吃</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">烘焙</a></li>
+					<li style="margin-top:10%;"><a href="#" style="color:black">糕点</a></li>
+					<li style="margin-top:10%;margin-bottom:10%;"><a href="#" style="color:black">甜点</a></li>
+					</div>
+					<button class="am-btn am-icon-chevron-down recipe_list_page_category_button_down" id="btn-next"></button>
+				</ul>
+			</div>
+			<div class="recipe_list_page_content">
+				<div>
+					<div class="recipe_list_page_recipe_content" id="rec">
+						<a href="recipe_content.html">
+							<div class="recipe_img"><img src="images/gongbao.jpg" class="recipe_image"></div>		
+							<div id="a1">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;宫保鸡丁</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;abc123</div>
+							</div>
+							<div id="a2" style="display:none">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;红烧猪蹄</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;123asd</div>
+							</div>
+						</a>
+					</div>
+					<div class="recipe_list_page_recipe_content" id="rec1">
+						<a href="recipe_content.html">
+							<div class="recipe_img"><img src="images/yuxiang.jpg" class="recipe_image"></div>		
+							<div id="b1">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;鱼香肉丝</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;abc123</div>
+							</div>
+							<div id="b2" style="display:none">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;红烧猪蹄</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;123asd</div>
+							</div>
+						</a>
+					</div>
+					<div class="recipe_list_page_recipe_content" id="rec2">
+						<a href="recipe_content.html">
+							<div class="recipe_img"><img src="images/jingjiang.jpg" class="recipe_image"></div>		
+							<div id="c1">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;京酱肉丝</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;abc123</div>
+							</div>
+							<div id="c2" style="display:none">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;红烧猪蹄</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;123asd</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div>
+					<div class="recipe_list_page_recipe_content" id="rec3">
+						<a href="recipe_content.html">
+							<div class="recipe_img"><img src="images/suanni.jpg" class="recipe_image"></div>		
+							<div id="d1">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;蒜泥黄瓜</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;abc123</div>
+							</div>
+							<div id="d2" style="display:none">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;红烧猪蹄</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;123asd</div>
+							</div>
+						</a>
+					</div>
+					<div class="recipe_list_page_recipe_content" id="rec4">
+						<a href="recipe_content.html">
+							<div class="recipe_img"><img src="images/gankao.jpg" class="recipe_image"></div>		
+							<div id="e1">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;干烤鱼</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;abc123</div>
+							</div>
+							<div id="e2" style="display:none">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;红烧猪蹄</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;123asd</div>
+							</div>
+						</a>
+					</div>
+					<div class="recipe_list_page_recipe_content" id="rec5">
+						<a href="recipe_content.html">
+							<div class="recipe_img"><img src="images/huoguo.jpg" class="recipe_image"></div>		
+							<div id="f1">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;火锅鸡</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;abc123</div>
+							</div>
+							<div id="f2" style="display:none">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;红烧猪蹄</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;123asd</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div>
+					<div class="recipe_list_page_recipe_content" id="rec6">
+						<a href="recipe_content.html">
+							<div class="recipe_img"><img src="images/mala.jpg" class="recipe_image"></div>		
+							<div id="g1">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;麻辣香锅</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;abc123</div>
+							</div>
+							<div id="g2" style="display:none">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;红烧猪蹄</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;123asd</div>
+							</div>
+						</a>
+					</div>
+					<div class="recipe_list_page_recipe_content" id="rec7">
+						<a href="recipe_content.html">
+							<div class="recipe_img"><img src="images/kaorou.jpg" class="recipe_image"></div>		
+							<div id="h1">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;烤肉</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;abc123</div>
+							</div>
+							<div id="h2" style="display:none">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;红烧猪蹄</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;123asd</div>
+							</div>
+						</a>
+					</div>
+					<div class="recipe_list_page_recipe_content" id="rec8">
+						<a href="recipe_content.html">
+							<div class="recipe_img"><img src="images/kaoniu.jpg" class="recipe_image"></div>		
+							<div id="i1">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;烤牛排</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;abc123</div>
+							</div>
+							<div id="i2" style="display:none">
+								<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;红烧猪蹄</div>
+								<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;123asd</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="recipe_list_page_pages">
+					<div id="pageGro" class="cb">
+						<div class="pageUp">上一页</div>
+					    <div class="pageList">
+					        <ul>
+					            <li>1</li>
+					            <li>2</li>
+					            <li>3</li>
+					            <li>4</li>
+					            <li>5</li>
+					        </ul>
+					    </div>
+					    <div class="pageDown">下一页</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="recipe_list_page_link">
+			<div class="link_center">
+				<br/>
+				<div class="link_title">友情链接</div>
+				<div class="link_border">
+					<div class="link_content">
+						<table  width="100%" height="50px">
+							<tr>
+								<td style="width:8.33%;">美食</td>
+								<td style="width:8.33%;">甜点</td>
+								<td style="width:8.33%;">厨房必备</td>
+								<td style="width:8.33%;">主食</td>
+								<td style="width:8.33%;">商家参考</td>
+								<td style="width:8.33%;">天天美食</td>
+								<td style="width:8.33%;">123菜谱大全</td>
+								<td style="width:8.33%;">爱奇艺</td>
+								<td style="width:8.33%;">音乐</td>
+								<td style="width:8.33%;">图吧</td>
+								<td style="width:8.33%;">饮食健康</td>
+								<td style="width:8.33%;">搜狐论坛</td>
+							</tr>
+							<tr>
+								<td style="width:8.33%;">赶集网</td>
+								<td style="width:8.33%;">美食网</td>
+								<td style="width:8.33%;">餐饮</td>
+								<td style="width:8.33%;">杂志网</td>
+								<td style="width:8.33%;">厨师网</td>
+								<td style="width:8.33%;">好豆菜谱</td>
+							</tr>
+						</table>
+					</div>
+					<div class="link_bottom">
+						关于我们&nbsp;&nbsp;|&nbsp;&nbsp;联系我们&nbsp;&nbsp;|&nbsp;&nbsp;最新动态&nbsp;&nbsp;|&nbsp;&nbsp;网站地图
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var rec=document.getElementById("rec");
+		var a1=document.getElementById("a1");
+		var a2=document.getElementById("a2");
+		rec.onmouseover=function(){
+			a1.style.display="none";
+			a2.style.display="block";
+			$("#a2").addClass("bck");
+		}
+		rec.onmouseout=function(){
+			a1.style.display="block";
+			a2.style.display="none";
+			$("#a2").removeClass("bck");
+		}
+
+		var rec1=document.getElementById("rec1");
+		var b1=document.getElementById("b1");
+		var b2=document.getElementById("b2");
+		rec1.onmouseover=function(){
+			b1.style.display="none";
+			b2.style.display="block";
+			$("#b2").addClass("bck");
+		}
+		rec1.onmouseout=function(){
+			b1.style.display="block";
+			b2.style.display="none";
+			$("#b2").removeClass("bck");
+		}
+
+		var rec2=document.getElementById("rec2");
+		var c1=document.getElementById("c1");
+		var c2=document.getElementById("c2");
+		rec2.onmouseover=function(){
+			c1.style.display="none";
+			c2.style.display="block";
+			$("#c2").addClass("bck");
+		}
+		rec2.onmouseout=function(){
+			c1.style.display="block";
+			c2.style.display="none";
+			$("#c2").removeClass("bck");
+		}
+
+		var rec3=document.getElementById("rec3");
+		var d1=document.getElementById("d1");
+		var d2=document.getElementById("d2");
+		rec3.onmouseover=function(){
+			d1.style.display="none";
+			d2.style.display="block";
+			$("#d2").addClass("bck");
+		}
+		rec3.onmouseout=function(){
+			d1.style.display="block";
+			d2.style.display="none";
+			$("#d2").removeClass("bck");
+		}
+
+		var rec4=document.getElementById("rec4");
+		var e1=document.getElementById("e1");
+		var e2=document.getElementById("e2");
+		rec4.onmouseover=function(){
+			e1.style.display="none";
+			e2.style.display="block";
+			$("#e2").addClass("bck");
+		}
+		rec4.onmouseout=function(){
+			e1.style.display="block";
+			e2.style.display="none";
+			$("#e2").removeClass("bck");
+		}
+
+		var rec5=document.getElementById("rec5");
+		var f1=document.getElementById("f1");
+		var f2=document.getElementById("f2");
+		rec5.onmouseover=function(){
+			f1.style.display="none";
+			f2.style.display="block";
+			$("#f2").addClass("bck");
+		}
+		rec5.onmouseout=function(){
+			f1.style.display="block";
+			f2.style.display="none";
+			$("#f2").removeClass("bck");
+		}
+
+		var rec6=document.getElementById("rec6");
+		var g1=document.getElementById("g1");
+		var g2=document.getElementById("g2");
+		rec6.onmouseover=function(){
+			g1.style.display="none";
+			g2.style.display="block";
+			$("#g2").addClass("bck");
+		}
+		rec6.onmouseout=function(){
+			g1.style.display="block";
+			g2.style.display="none";
+			$("#g2").removeClass("bck");
+		}
+
+		var rec7=document.getElementById("rec7");
+		var h1=document.getElementById("h1");
+		var h2=document.getElementById("h2");
+		rec7.onmouseover=function(){
+			h1.style.display="none";
+			h2.style.display="block";
+			$("#h2").addClass("bck");
+		}
+		rec7.onmouseout=function(){
+			h1.style.display="block";
+			h2.style.display="none";
+			$("#h2").removeClass("bck");
+		}
+
+		var rec8=document.getElementById("rec8");
+		var i1=document.getElementById("i1");
+		var i2=document.getElementById("i2");
+		rec8.onmouseover=function(){
+			i1.style.display="none";
+			i2.style.display="block";
+			$("#i2").addClass("bck");
+		}
+		rec8.onmouseout=function(){
+			i1.style.display="block";
+			i2.style.display="none";
+			$("#i2").removeClass("bck");
+		}
+
+
+		$("#btn-pre").click(function(){
+			$("#flow").animate({
+				'scrollTop':"+=-95px"
+			},1000);
+		});
+		$("#btn-next").click(function(){
+			$("#flow").animate({
+				'scrollTop':"+=95px"
+			},1000);
+		});
+	</script>
+</html>
