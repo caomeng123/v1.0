@@ -1,0 +1,8 @@
+ol,ul {list-style:none} 
+
+#pageGro{ width:400px; height:30px; margin:0px auto; padding-top:30px;position: relative;}
+#pageGro div,#pageGro div ul li{ font-size:15px; color:#999; line-height:30px; float:left; margin-left:10px;}
+#pageGro div.pageUp{position: absolute;left: -40px;}
+#pageGro div ul li{ width:30px; text-align:center; border:1px solid #999; cursor:pointer;background: white;}
+#pageGro div ul li.on{ color:#fff; background:#3c90d9; border:1px solid #3c90d9;}
+#pageGro .pageUp,#pageGro .pageDown{ width:70px; border:1px solid #999; cursor:pointer;text-align: center;background: white;}
