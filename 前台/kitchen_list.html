@@ -11,8 +11,17 @@
 		<link rel="stylesheet" type="text/css" href="css/pageGroup.css"/>
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/pageGroup.js"></script>
+		<style>
+			.fix{ 
+				position: fixed;
+				right: 0;
+				bottom: 50px;
+				z-index: 10;
+			}
+		</style>
 	</head>
 	<body>
+		<a name="top">
 		<div class="top">
 			<div class="top_center">
 				<div class="logo">
@@ -25,8 +34,8 @@
 					</div>
 				</div>
 				<div class="login">
-					<a href="#">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="#">注册</a>
+					<a href="login_user.html">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="regist_user.html">注册</a>
 				</div>
 			</div>
 		</div>
@@ -55,19 +64,22 @@
 			</div>
 		</div>
 		<div class="kitchen_category_page_category_all">
-			<table>
-				<tr>
-					<td class="kitchen_category_page_category"><button class="am-icon-chevron-left am-circle"></button></td>
-					<td class="kitchen_category_page_category">水果类</td>
-					<td class="kitchen_category_page_category">海鲜类</td>
-					<td class="kitchen_category_page_category">维生素</td>
-					<td class="kitchen_category_page_category">蔬菜类</td>
-					<td class="kitchen_category_page_category">五谷</td>
-					<td class="kitchen_category_page_category">禽类</td>
-					<td class="kitchen_category_page_category">饮品</td>
-					<td class="kitchen_category_page_category"><button class="am-icon-chevron-right am-circle"></button></td>
-				</tr>
-			</table>
+			<button class="am-icon-chevron-left am-circle" style="float:left" id="btn-pre"></button>
+			<div style="width:925px;overflow-x:hidden;float:left" id="flow"> 
+			    <div style="width:2000px;">       
+			        <div style="width:165px;float:left;text-align:center"><li class="back-col" onclick="select(this)"><a href="#">水果类</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">海鲜类</a></li></div>            
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">维生素</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">蔬菜类</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">五谷</a></li></div>
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">禽类</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">饮品</a></li></div>            
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">水果类</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">海鲜类</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">维生素</a></li></div>
+			    </div>
+			</div>
+			<button class="am-icon-chevron-right am-circle" style="float:right" id="btn-next"></button>
 		</div>
 		<div class="recipe">
 			<div>
@@ -141,7 +153,7 @@
 						<div class="recipe_img"><img src="images/tomato.jpg" class="recipe_image"></div>		
 						<div id="h1">
 							<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;西红柿</div>
-							<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;原产南美洲，中国南北方广泛栽培。番茄的果实营养丰富，具特殊风味。可以生食、煮食、加工番茄酱、汁或整果罐藏。</div>
+							<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;原产南美洲，中国南北方广泛栽培。果实营养丰富，特殊风味。可生食、煮食、加工番茄酱、汁或整果罐藏。</div>
 						</div>
 					</a>
 				</div>
@@ -199,5 +211,37 @@
 				</div>
 			</div>
 		</div>
+		<div class="fix"><a href="#top"><img src="images/meishiniang13.png" style="width:180px;"></a></div>
 	</body>
+	<script type="text/javascript">
+		$("#btn-pre").click(function(){
+			$("#flow").animate({
+				'scrollLeft':"+=-192px"
+			},1000);
+		});
+		$("#btn-next").click(function(){
+			$("#flow").animate({
+				'scrollLeft':"+=192px"
+			},1000);
+		});
+		var preDiv=null;
+		function select(_this){
+			$("li").removeClass("back-col");
+			if(preDiv) preDiv.style.cssText="";
+			_this.style.cssText="background-color:#DCDCDC ";
+			preDiv=_this;
+		}
+	</script>
+	<style type="text/css">
+		.back-col{
+			background-color: #DCDCDC ;
+		}
+		#flow li{
+			list-style-type: none;
+			height: 35px;
+		}
+		#flow a{
+			color:red;
+		}
+	</style>
 </html>
