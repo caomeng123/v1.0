@@ -1,13 +1,14 @@
 /*首页css*/
 body{ 
 	background-color: #FFD1A4;
+	min-width: 960px;
 }
 .top{ 
-	background-color: red;
+	background-color: #CE0000;
 	height: 135px;
 }
 .top_center{ 
-	width: 80%;
+	width: 990px;
 	margin: 0 auto;
 }
 .logo{ 
@@ -16,15 +17,15 @@ body{
 }
 .logo_image{ 
 	width: 100%;
-	margin-top: 20%;
+	margin-top: 15%;
 }
 .search{ 
-	width: 50%;
+	width: 500px;
 	float: left;
 }
 .search1{ 
 	margin-top: 55px;
-	margin-left: 24%;
+	margin-left: 25%;
 }
 .search_input{ 
 	border-radius: 5px 0 0 5px;
@@ -32,20 +33,20 @@ body{
 }
 .search_search{ 
 	border-radius: 0 5px 5px 0;
-	background-color: red;
+	background-color: #ce0000;
 	color: white;
 	font-size: 16px;
 }
 .login{ 
 	float: right;
 	margin-top: 20px;
-	margin-right: 7%;
+	margin-right: 5%;
 }
 .login a{ 
 	color: white;
 }
 .nav_center{ 
-	width: 75%;
+	width: 960px;
 	margin: 0 auto;
 }
 .nav{ 
@@ -61,7 +62,7 @@ body{
 	background-color: #D0D0D0;
 }
 .health{ 
-	width: 80%;
+	width: 990px;
 	margin: 0 auto;
 	margin-top:40px;
 	background-color: white;
@@ -96,11 +97,11 @@ body{
 	overflow: hidden;
 }
 .foc{
-	background-color: red;
+	background-color: #ce0000;
 	color: white;
 }
 .restaurant{ 
-	width: 80%;
+	width: 990px;
 	margin: 0 auto;
 	margin-top:40px;
 }
@@ -142,9 +143,14 @@ body{
 	font-size: 18px;
 }
 .recipe{ 
-	width: 80%;
+	width: 990px;
 	margin: 0 auto;
-	margin-top:420px;
+	margin-top:15px;
+}
+.recipe_title{ 
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
 }
 .recipe_image{ 
 	width:100%;
@@ -166,7 +172,7 @@ body{
 	width: 23%;
 }
 .recipe_img{ 
-	height: 185px;
+	height: 150px;
 	overflow: hidden;
 	width: 100%;
 }
@@ -174,7 +180,7 @@ body{
 	font-weight: bold;
 }
 .recipe_b{ 
-	color: red;
+	color: #ce0000;
 	font-size: 13px;
 }
 .restaurant_recipe_title a{
@@ -204,12 +210,12 @@ body{
 }
 .index_link{ 
 	height: 200px;
-	background-color: red;
-	margin-top: 530px;
+	background-color: #ce0000;
+	margin-top: 500px;
 	position: relative;
 }
 .link_center{ 
-	width: 75%;
+	width: 950px;
 	margin: auto;
 }
 .link_title{ 
@@ -234,20 +240,20 @@ body{
 /* ********************************************************************************** */
 /*菜谱大全列表页css*/
 .recipe_list_page{ 
-	width: 90%;
+	width: 990px;
 	margin: 0 auto;
 	margin-top: 70px;
 }
 .recipe_list_page_title{ 
-	width: 18%;
-	margin-left: 5%;
+	width: 200px;
+	margin-left: 50px;
 	float: left;
 }
 .recipe_list_page_category_title{ 
 	background-color: #FFD1A4;
 	font-size: 24px;
 	font-weight: bold;
-	color: red;
+	color: #ce0000;
 }
 .recipe_list_page_category_content{ 
 	background-color: white;
@@ -256,7 +262,7 @@ body{
 	border-radius: 10px;
 	text-align: center;
 	border: 1px solid #FFD1A4;
-	margin-left: 20%;
+	margin-left: 20px;
 }
 .recipe_list_page_category_button_up{ 
 	width:100%; 
@@ -275,8 +281,8 @@ body{
 }
 .recipe_list_page_link{ 
 	height: 200px;
-	background-color: red;
-	margin-top: 900px;
+	background-color: #ce0000;
+	margin-top: 850px;
 	position: relative;
 }
 .recipe_list_page_recipe_content{ 
@@ -293,7 +299,7 @@ body{
 }
 .recipe_list_page_bread{ 
 	position: absolute;
-	left: 9%;
+	left: 100px;
 	top: 200px;
 }
 .recipe_list_page_bread ul li a{
@@ -315,12 +321,12 @@ body{
 	font-weight: bold;
 	margin-left: 1%;
 	font-size: 18px;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 .restaurant_list_page_dianjiajieshao{ 
 	background-color: white;
-	height: 200px;
-	border-radius: 10px;
+	height: 220px;
+	border-radius: 10px; 
 }
 .restaurant_list_page_jigongbao{ 
 	font-weight: bold;
@@ -329,13 +335,12 @@ body{
 	margin-top:1%;
 }
 .restaurant_list_page_img{ 
-	width: 80%;
+	width: 100%;
 	border-radius: 10px;
-	margin-left: 10%;
+	margin-left: 3%;
 	margin-top: 10%;
 }
 .restaurant_list_page_img_content{ 
-	margin-top: 2%;
 	height: 150px;
 }
 .restaurant_list_page_dianjiatesecaipu{ 
@@ -346,8 +351,8 @@ body{
 }
 .restaurant_list_page_dianjiatesecaipu_content{ 
 	width: 85%;
-	height: 420px;
-	background-color: white;
+	height: 400px;
+	background-color: #FFD1A4;
 	border-radius: 10px;
 	margin: 0 auto;
 	float: left;
@@ -358,7 +363,7 @@ body{
 }
 .restaurant_list_page_dianjiatesecaipu_div{ 
 	border: 2px solid #FFD1A4;
-	height: 210px;
+	height: 200px;
 	border-radius: 10px;
 }
 .restaurant_list_page_dianjiatesecaipu_div1{ 
@@ -388,12 +393,12 @@ body{
 /* ********************************************************************************** */
 /*厨房百科列表页css*/
 .kitchen_category_page_category_all{ 
-	width: 80%;
+	width: 990px;
 	height: 40px;
 	background-color: white;
 	border-radius: 50px;
+	margin: 0 auto;
 	margin-top: 120px;
-	margin-left: 10%;
 	color: #F75000;
 	font-weight: bold;
 	font-size: 18px;
@@ -402,19 +407,14 @@ body{
 .kitchen_category_page_category{ 
 	width: 12.5%;
 }
-.recipe{ 
-	width: 80%;
-	margin: 0 auto;
-	margin-top:15px;
-}
 .kitchen_list_page_pages{ 
 	margin-top: 40px;
 	float: right;
 }
 .kitchen_list_page_link{ 
 	height: 200px;
-	background-color: red;
-	margin-top: 750px;
+	background-color: #ce0000;
+	margin-top: 680px;
 	position: relative;
 }
 .recipe_a{
@@ -428,8 +428,8 @@ body{
 }
 .health_list_page_link{ 
 	height: 200px;
-	background-color: red;
-	margin-top: 700px;
+	background-color: #ce0000;
+	margin-top: 650px;
 	position: relative;
 }
 .health_list_page_recipe_content{ 
@@ -444,23 +444,22 @@ body{
 /* ********************************************************************************** */
 /*讨论区列表页css*/
 .chat_list_page_content{ 
-	width: 80%;
-	margin-left:8%;
+	width: 85%;
+	margin-left:5%;
 	margin-top: 10px;
-	height: 680px;
+	height: 700px;
 	float: left;
 }
 .chat_list_page_left{ 
 	width: 68%;
 	background-color: white;
-	height: 680px;
+	height: 700px;
 	float: left;
 	padding: 20px;
 	border-radius: 10px;
 } 
 .chat_list_page_right{ 
 	width: 30%;
-	height: 680px;
 	float: right;
 	margin-left: 2%;
 }
@@ -483,7 +482,7 @@ body{
 /* ********************************************************************************** */
 /*菜谱大全/店家分享内容页css*/
 .recipe_content_page_content{ 
-	width: 75%;
+	width: 990px;
 	background-color: white;
 	height: 350px;
 	margin: 0 auto;
@@ -514,7 +513,7 @@ body{
 }
 .recipe_content_page_content_img_content_p2 span{ 
 	font-size: 24px;
-	color: red;
+	color: #ce0000;
 }
 .recipe_content_page_content_img_content_head{ 
 	width: 16%;
@@ -535,10 +534,9 @@ body{
 }
 
 .recipe_content_page_cailiao{ 
-	width: 50%;
+	width: 75%;
 	background-color: white;
 	height: 140px;
-	margin-left: 12.5%;
 	margin-top: 20px;
 	border-radius: 10px;
 	padding: 28px;
@@ -550,10 +548,8 @@ body{
 	font-size: 17px;
 }
 .recipe_content_page_make{ 
-	width: 50%;
+	width: 75%;
 	background-color: white;
-	height: 2350px;
-	margin-left: 12.5%;
 	margin-top: 20px;
 	border-radius: 10px;
 	padding: 28px;
@@ -561,20 +557,18 @@ body{
 .recipe_content_page_num{ 
 	font-size: 45px;
 	font-style: italic;
-	color: red;
+	color: #ce0000;
 }
 .recipe_content_page_commit{ 
-	width: 50%;
+	width: 75%;
 	background-color: white;
-	height: 500px;
-	margin-left: 12.5%;
 	margin-top: 20px;
 	border-radius: 10px;
 	padding: 28px;
 }
 .recipe_content_page_link{ 
 	height: 200px;
-	background-color: red;
+	background-color: #ce0000;
 	margin-top: 50px;
 	position: relative;
 }
@@ -628,7 +622,7 @@ body{
 /* ********************************************************************************** */
 /*厨房百科/饮食健康内容页css*/
 .kitchen_content_page{ 
-	width: 80%;
+	width: 990px;
 	margin: 0 auto;
 	border-radius: 10px;
 }
@@ -650,20 +644,19 @@ body{
 	margin-top: 1%;
 }
 .kitchen_content_page_img{ 
-	width: 25%;
+	width: 310px;
 	position: absolute;
-	top: 260px;
-	left: 63.5%;
+	top: 255px;
+	left: 66%;
 }
 .kitchen_content_page_img_image{ 
 	width: 100%;
 	border-radius: 10px;
 }
 .kitchen_content_page_commit{ 
-	width: 52%;
+	width: 65%;
 	background-color: white;
 	height: 500px;
-	margin-left: 10%;
 	margin-top: 20px;
 	border-radius: 10px;
 	padding: 28px;
@@ -671,13 +664,13 @@ body{
 /* ********************************************************************************** */
 /*讨论区内容页css*/
 .chat_content_page{ 
-	width: 80%;
+	width: 990px;
 	background-color: white;
 	margin: 0 auto;
 	margin-top: 10px;
 	border-radius: 10px;
 	padding: 20px;
-	height: 1300px;
+	height: 1200px;
 }
 .chat_content_page_img{ 
 	width: 15%;
@@ -693,7 +686,7 @@ body{
 	padding: 20px;
 }
 .chat_content_page_all{
-	margin-top: 20px;
+	margin-top: 20px;	
 }
 .chat_content_page_content_title{ 
 	font-size: 20px;
@@ -701,10 +694,82 @@ body{
 }
 .chat_content_page_commit{ 
 	position: absolute;
-	top: 1300px;
-	left: 11.6%;
+	top: 1200px;
 }
 .chat_content_page_commit_img{ 
-	width:17%;
+	width:15%;
 	float: left;
+}
+/* ********************************************************************************** */
+/*用户/店家个人中心css*/
+.per{ 
+	width: 980px;
+	margin: 0 auto;
+}
+.per_user{ 
+	width: 100%;
+	background-color: white;
+	height: 150px;
+	border-radius: 10px;
+}
+.per_user_img{ 
+	width: 15.2%;
+	float: left;
+}
+.per_user_content{ 
+	float: left;
+	padding: 20px;
+}
+.per_user_content_font{ 
+	font-size: 25px;
+}
+.per_recipe{ 
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.per_user_recipe{ 
+	width: 100%;
+	background-color: white;
+	height: 345px;
+	border-radius: 10px;
+}
+.per_user_recipe_1{ 
+	width: 20%;
+	margin-left: 4%;
+	float: left;
+	margin-top: 10px;
+}
+.per_user_chat ul li a{ 
+	color: black;
+}
+.per_user_chat{ 
+	width: 100%;
+	background-color: white;
+	height: 245px;
+	border-radius: 10px;
+}
+.per_restaurant{ 
+	width: 100%;
+	background-color: white;
+	height: 200px;
+	border-radius: 10px;
+}
+.per_restaurant_img{ 
+	width: 20.5%;
+	float: left;
+}
+/* ********************************************************************************** */
+/*发布菜谱/发布新贴css*/
+.push_recipe{ 
+	width: 990px;
+	margin: 0 auto;
+}
+.push_recipe_content{ 
+	background-color: white;
+	border-radius: 10px;
+	padding: 50px;
+}
+.push_recipe_content_jiange{ 
+	margin-top: 20px;
 }
