@@ -11,8 +11,17 @@
 		<link rel="stylesheet" type="text/css" href="css/pageGroup.css"/>
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 		<script type="text/javascript" src="js/pageGroup.js"></script>
+		<style>
+			.fix{ 
+				position: fixed;
+				right: 0;
+				bottom: 50px;
+				z-index: 10;
+			}
+		</style>
 	</head>
 	<body>
+		<a name="top">
 		<div class="top">
 			<div class="top_center">
 				<div class="logo">
@@ -25,8 +34,8 @@
 					</div>
 				</div>
 				<div class="login">
-					<a href="#">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="#">注册</a>
+					<a href="login_user.html">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="regist_user.html">注册</a>
 				</div>
 			</div>
 		</div>
@@ -55,20 +64,20 @@
 				<ul class="am-nav recipe_list_page_category_content">
 					<button class="am-btn am-icon-chevron-up recipe_list_page_category_button_up" id="btn-pre"></button>
 					<div style="height:315px;overflow:scroll;overflow-y:hidden" id="flow">
-					<li style="margin-top:10%;"><a href="#" style="color:black">家常菜谱</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">中华料理</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">外国料理</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">各地小吃</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">烘焙</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">糕点</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">甜点</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">家常菜谱</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">中华料理</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">外国料理</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">各地小吃</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">烘焙</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">糕点</a></li>
-					<li style="margin-top:10%;margin-bottom:10%;"><a href="#" style="color:black">甜点</a></li>
+					<li  class="back-col" onclick="select(this)"><a href="#" style="color:black">家常菜谱</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">中华料理</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">外国料理</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">各地小吃</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">烘焙</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">糕点</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">甜点</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">家常菜谱</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">中华料理</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">外国料理</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">各地小吃</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">烘焙</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">糕点</a></li>
+					<li  onclick="select(this)"><a href="#" style="color:black">甜点</a></li>
 					</div>
 					<button class="am-btn am-icon-chevron-down recipe_list_page_category_button_down" id="btn-next"></button>
 				</ul>
@@ -251,6 +260,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="fix"><a href="#top"><img src="images/meishiniang8.png" style="width:180px;"></a></div>
 	</body>
 	<script type="text/javascript">
 		var rec=document.getElementById("rec");
@@ -390,5 +400,23 @@
 				'scrollTop':"+=95px"
 			},1000);
 		});
+
+
+		var preLi=null;
+		function select(_this){
+			$("li").removeClass("back-col");
+			if(preLi) preLi.style.cssText="";
+			_this.style.cssText="background-color:#ADADAD";
+			preLi=_this;
+		}
 	</script>
+	<style type="text/css">
+		.back-col{
+			background-color: #ADADAD;
+		}
+		#flow li{
+			height: 15%;
+			padding-top: 4%;
+		}
+	</style>
 </html>
