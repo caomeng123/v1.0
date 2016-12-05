@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>美食姬</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/amazeui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/amazeui.min.js"></script>
+		<style>
+   			a{
+   				color:black;
+   			}
+   			span{
+   				font-size: 80%;
+   			}
+   		</style>
+	</head>
+	<body>
+		<div class="top">
+			<div class="top_center">
+				<div class="logo">
+					<img src="images/logo.jpg" class="logo_image">
+				</div>
+				<div class="search">
+					<div class="search1">
+						<input type="text" class="search_input">
+						<a href="#"><button class="search_search">&nbsp;&nbsp;搜&nbsp;索&nbsp;&nbsp;</button></a>
+					</div>
+				</div>
+				<div class="login">
+					<a href="login_user.html">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="regist_user.html">注册</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_center">
+				<ul class="am-nav am-nav-pills am-nav-justify nav_a">
+					<li class="nav_a_index"><a href="index.html">首页</a></li>
+					<li><a href="recipe_list.html">菜谱大全</a></li>
+					<li><a href="restaurant_list.html">店家分享</a></li>
+					<li><a href="kitchen_list.html">厨房百科</a></li>
+					<li><a href="health_list.html">饮食健康</a></li>
+					<li><a href="chat_list.html">讨论区</a></li>					
+				</ul>
+			</div>
+		</div> 
+
+		<div class="login_user">
+			<div style="margin-left:5%;margin-top:2%">
+				<a href="index.html">
+					<i class="am-icon-reply"></i>&nbsp;&nbsp;返回首页
+				</a>
+			</div>
+			<div style="margin:0 auto;width:600px;padding-top:5%;padding-bottom:5%;background-color:white;border-radius:10px;">
+				<div class="am-btn-toolbar" style="width:75%;margin:0 auto">
+					<div class="am-btn-group am-btn-group-justify">
+						<a href="regist_user.html" class="am-btn am-btn-default">个人用户注册</a>
+						<a href="regist_restaurant.html" class="am-btn am-btn-default am-active">店家用户注册</a>
+					</div>
+				</div>
+				<div>
+					<div style="padding-top:5%;margin-left:20%;width:100%;">
+						<input type="text" id="username" placeholder="请输入用户名" style="width:60%;height:40px;" value="">
+						<span id="error1" style="padding-left:1%"></span>
+					</div>
+					<div style="padding-top:3%;margin-left:20%;width:100%">
+						<input type="text" id="password" placeholder="请输入密码" style="width:60%;height:40px;" value="">
+						<span id="error2" style="padding-left:1%"></span>
+					</div>
+					<div style="padding-top:3%;margin-left:20%;width:100%">
+						<input type="text" id="password" placeholder="请再次确认密码" style="width:60%;height:40px;" value="">
+						<span id="error2" style="padding-left:1%"></span>
+					</div>
+					<div style="padding-top:3%;margin-left:20%;width:100%">
+						<input type="text" id="password" placeholder="请输入许可证号" style="width:60%;height:40px;" value="">
+						<span id="error2" style="padding-left:1%"></span>
+					</div>
+
+				</div>
+				<div style="width:10%;margin:0 auto;padding-top:4%">
+					<a href="login_restaurant.html" class="am-btn am-btn-danger" style="border-radius:5px;">&nbsp;注&nbsp;册&nbsp;</a>	
+				</div>
+			</div>
+		</div>	
+
+		<div class="recipe_content_page_link">
+			<div class="link_center">
+				<br/>
+				<div class="link_title">友情链接</div>
+				<div class="link_border">
+					<div class="link_content">
+						<table  width="100%" height="50px">
+							<tr>
+								<td style="width:8.33%;">美食</td>
+								<td style="width:8.33%;">甜点</td>
+								<td style="width:8.33%;">厨房必备</td>
+								<td style="width:8.33%;">主食</td>
+								<td style="width:8.33%;">商家参考</td>
+								<td style="width:8.33%;">天天美食</td>
+								<td style="width:8.33%;">123菜谱大全</td>
+								<td style="width:8.33%;">爱奇艺</td>
+								<td style="width:8.33%;">音乐</td>
+								<td style="width:8.33%;">图吧</td>
+								<td style="width:8.33%;">饮食健康</td>
+								<td style="width:8.33%;">搜狐论坛</td>
+							</tr>
+							<tr>
+								<td style="width:8.33%;">赶集网</td>
+								<td style="width:8.33%;">美食网</td>
+								<td style="width:8.33%;">餐饮</td>
+								<td style="width:8.33%;">杂志网</td>
+								<td style="width:8.33%;">厨师网</td>
+								<td style="width:8.33%;">好豆菜谱</td>
+							</tr>
+						</table>
+					</div>
+					<div class="link_bottom">
+						关于我们&nbsp;&nbsp;|&nbsp;&nbsp;联系我们&nbsp;&nbsp;|&nbsp;&nbsp;最新动态&nbsp;&nbsp;|&nbsp;&nbsp;网站地图
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="position:absolute;left:70%;top:400px;"><img src="images/meishiniang12.png" style="width:250px;"></div>
+	</body>
+	<script type="text/javascript">
+		function confirm(){
+			var username=document.getElementById("username").val();
+			var password=document.getElementById("password").val();
+		}
+	</script>
+</html>
