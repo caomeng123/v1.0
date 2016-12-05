@@ -8,8 +8,17 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/amazeui.min.js"></script>
+		<style>
+			.fix{ 
+				position: fixed;
+				right: 0;
+				bottom: 50px;
+				z-index: 10;
+			}
+		</style>
 	</head>
 	<body>
+		<a name="top">
 		<div class="top">
 			<div class="top_center">
 				<div class="logo">
@@ -22,8 +31,8 @@
 					</div>
 				</div>
 				<div class="login">
-					<a href="#">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="#">注册</a>
+					<a href="login_user.html">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="regist_user.html">注册</a>
 				</div>
 			</div>
 		</div>
@@ -88,7 +97,7 @@
 		<div class="recipe_content_page_commit">
 			<div>
 				<div class="recipe_content_page_commit_img"><img src="images/head1.jpg" class="recipe_content_page_commit_img_image"></div>
-				<div class="recipe_content_page_commit_content"><textarea rows="3" cols="50"></textarea></div>
+				<div class="recipe_content_page_commit_content"><textarea rows="3" cols="57"></textarea></div>
 				<div class="recipe_content_page_commit_submit"><button style="background-color:red;color:white;border-radius:5px;">提交评论</button></div>
 			</div>
 			<hr/>
@@ -164,5 +173,6 @@
 				</div>
 			</div>
 		</div>
+		<div class="fix"><a href="#top"><img src="images/meishiniang3.png" style="width:180px;"></a></div>
 	</body>
 </html>
