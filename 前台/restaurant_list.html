@@ -15,8 +15,18 @@
     	
     	<script src="js/swiper-3.3.1.jquery.min.js"></script>
     	<script src="js/swiper.animate1.0.2.min.js"></script>
+
+    	<style>
+			.fix{ 
+				position: fixed;
+				right: 0;
+				bottom: 50px;
+				z-index: 10;
+			}
+		</style>
 	</head>
 	<body>
+		<a name="top">
 		<div class="top">
 			<div class="top_center">
 				<div class="logo">
@@ -29,8 +39,8 @@
 					</div>
 				</div>
 				<div class="login">
-					<a href="#">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="#">注册</a>
+					<a href="login_user.html">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="regist_user.html">注册</a>
 				</div>
 			</div>
 		</div>
@@ -59,17 +69,17 @@
 				<ul class="am-nav recipe_list_page_category_content">
 					<button class="am-btn am-icon-chevron-up recipe_list_page_category_button_up" id="btn-pre"></button>
 					<div style="height:250px;overflow:scroll;overflow:hidden" id="flow">
-					<li style="margin-top:10%;"><a href="#" style="color:black">重庆鸡公煲</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">麻辣鱼</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">百度烤肉</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">春园烤肉王</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">老酒川菜坊</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">重庆鸡公煲</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">麻辣鱼</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">百度烤肉</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">春园烤肉王</a></li>
-					<li style="margin-top:10%;"><a href="#" style="color:black">老酒川菜坊</a></li>
-					<li style="margin-top:10%;margin-bottom:10%;"><a href="#" style="color:black">麻辣香锅</a></li>
+					<li class="back-col" onclick="select(this)"><a href="#" style="color:black">重庆鸡公煲</a></li>
+					<li onclick="select(this)"><a href="#" style="color:black">麻辣鱼</a></li>
+					<li onclick="select(this)"><a href="#" style="color:black">百度烤肉</a></li>
+					<li onclick="select(this)"><a href="#" style="color:black">春园烤肉王</a></li>
+					<li onclick="select(this)"><a href="#" style="color:black">老酒川菜坊</a></li>
+					<li onclick="select(this)"><a href="#" style="color:black">重庆鸡公煲</a></li>
+					<li onclick="select(this)"><a href="#" style="color:black">麻辣鱼</a></li>
+					<li onclick="select(this)"><a href="#" style="color:black">百度烤肉</a></li>
+					<li onclick="select(this)"><a href="#" style="color:black">春园烤肉王</a></li>
+					<li onclick="select(this)"><a href="#" style="color:black">老酒川菜坊</a></li>
+					<li onclick="select(this)"><a href="#" style="color:black">麻辣香锅</a></li>
 					</div>
 					<button class="am-btn am-icon-chevron-down recipe_list_page_category_button_down" id="btn-next"></button>
 				</ul>
@@ -84,43 +94,44 @@
 					</div>
 				</div>
 				<div class="restaurant_list_page_title2">店家特色菜谱</div>
-				 <div class="swiper-container" style="margin-top:10px">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background:white;height:420px">
-                        <div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
-							<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/cangzhou.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
-							<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>沧州火锅鸡</h2><p>沧州火锅鸡是一道色香味俱全的汉族名菜，属于冀菜系。此菜起源于河北省沧州市。以菜鸡，番茄，豆瓣酱，大蒜，大料，辣椒为料制作而成。食川沧州麻辣火锅鸡为主要代表，味道麻辣鲜香，食用时配以陈醋蒜泥麻酱等辅料，味香浓郁，回味无比</p></div></a>
-						</div>
-						<div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
-							<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/malaxiangguo.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
-							<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>麻辣香锅</h2><p>麻辣香锅发源于重庆缙云山，由川渝地方麻辣风味融合而来，麻辣香锅源于土家风味，是当地老百姓的家常做法，以麻、辣、鲜、香、油、混搭为特点。虽然麻辣香锅属于麻辣口味，但颇受全国食客喜爱。</p></div></a>
-						</div>
-                    </div>   
-                    <div class="swiper-slide" style="background:white;height:420px">
-                        <div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
-							<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/cangzhou.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
-							<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>沧州火锅鸡</h2><p>沧州火锅鸡是一道色香味俱全的汉族名菜，属于冀菜系。此菜起源于河北省沧州市。以菜鸡，番茄，豆瓣酱，大蒜，大料，辣椒为料制作而成。食川沧州麻辣火锅鸡为主要代表，味道麻辣鲜香，食用时配以陈醋蒜泥麻酱等辅料，味香浓郁，回味无比</p></div></a>
-						</div>
-						<div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
-							<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/malaxiangguo.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
-							<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>麻辣香锅</h2><p>麻辣香锅发源于重庆缙云山，由川渝地方麻辣风味融合而来，麻辣香锅源于土家风味，是当地老百姓的家常做法，以麻、辣、鲜、香、油、混搭为特点。虽然麻辣香锅属于麻辣口味，但颇受全国食客喜爱。</p></div></a>
-						</div>
-                    </div>
-                    <div class="swiper-slide" style="background:white;height:420px">
-                        <div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
-							<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/cangzhou.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
-							<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>沧州火锅鸡</h2><p>沧州火锅鸡是一道色香味俱全的汉族名菜，属于冀菜系。此菜起源于河北省沧州市。以菜鸡，番茄，豆瓣酱，大蒜，大料，辣椒为料制作而成。食川沧州麻辣火锅鸡为主要代表，味道麻辣鲜香，食用时配以陈醋蒜泥麻酱等辅料，味香浓郁，回味无比</p></div></a>
-						</div>
-						<div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
-							<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/malaxiangguo.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
-							<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>麻辣香锅</h2><p>麻辣香锅发源于重庆缙云山，由川渝地方麻辣风味融合而来，麻辣香锅源于土家风味，是当地老百姓的家常做法，以麻、辣、鲜、香、油、混搭为特点。虽然麻辣香锅属于麻辣口味，但颇受全国食客喜爱。</p></div></a>
-						</div>
-                    </div>
-             	</div>
+					<div class="swiper-container" style="margin-top:10px;">
+		                <div class="swiper-wrapper">
+		                    <div class="swiper-slide" style="background:white;height:400px">
+		                        <div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
+									<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/cangzhou.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
+									<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>沧州火锅鸡</h2><p>沧州火锅鸡是一道色香味俱全的汉族名菜，属于冀菜系。此菜起源于河北省沧州市。以菜鸡，番茄，豆瓣酱，大蒜，大料，辣椒为料制作而成。食川沧州麻辣火锅鸡为主要代表，味道麻辣鲜香。</p></div></a>
+								</div>
+								<div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
+									<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/malaxiangguo.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
+									<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>麻辣香锅</h2><p>麻辣香锅发源于重庆缙云山，由川渝地方麻辣风味融合而来，麻辣香锅源于土家风味，是当地老百姓的家常做法，以麻、辣、鲜、香、油、混搭为特点。</p></div></a>
+								</div>
+		                    </div>   
+		                    <div class="swiper-slide" style="background:white;height:400px">
+		                        <div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
+									<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/cangzhou.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
+									<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>沧州火锅鸡</h2><p>沧州火锅鸡是一道色香味俱全的汉族名菜，属于冀菜系。此菜起源于河北省沧州市。以菜鸡，番茄，豆瓣酱，大蒜，大料，辣椒为料制作而成。食川沧州麻辣火锅鸡为主要代表，味道麻辣鲜香。</p></div></a>
+								</div>
+								<div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
+									<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/malaxiangguo.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
+									<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>麻辣香锅</h2><p>麻辣香锅发源于重庆缙云山，由川渝地方麻辣风味融合而来，麻辣香锅源于土家风味，是当地老百姓的家常做法，以麻、辣、鲜、香、油、混搭为特点。</p></div></a>
+								</div>
+		                    </div>
+		                    <div class="swiper-slide" style="background:white;height:400px">
+		                        <div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
+									<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/cangzhou.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
+									<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>沧州火锅鸡</h2><p>沧州火锅鸡是一道色香味俱全的汉族名菜，属于冀菜系。此菜起源于河北省沧州市。以菜鸡，番茄，豆瓣酱，大蒜，大料，辣椒为料制作而成。食川沧州麻辣火锅鸡为主要代表，味道麻辣鲜香。</p></div></a>
+								</div>
+								<div class="restaurant_list_page_dianjiatesecaipu_div"><a href="restaurant_content.html">
+									<div class="restaurant_list_page_dianjiatesecaipu_div1"><img src="images/malaxiangguo.jpg" class="restaurant_list_page_dianjiatesecaipu_img" style="margin-top:25px;"></div>
+									<div class="restaurant_list_page_dianjiatesecaipu_div2"><h2>麻辣香锅</h2><p>麻辣香锅发源于重庆缙云山，由川渝地方麻辣风味融合而来，麻辣香锅源于土家风味，是当地老百姓的家常做法，以麻、辣、鲜、香、油、混搭为特点。</p></div></a>
+								</div>
+		                    </div>
+		             	</div>
+		            </div>
                 <div class="swiper-scrollbar"></div>     
             </div>
-            <div class="swiper-button-prev" style="pasition:absolute;top:790px;left:25%"></div>  
-            <div class="swiper-button-next" style="pasition:absolute;top:790px;left:86%;"></div>
+            <div class="swiper-button-prev" style="pasition:absolute;top:770px;left:25%"></div>  
+            <div class="swiper-button-next" style="pasition:absolute;top:770px;left:91%;"></div>
         </div>
     </div>
 
@@ -161,6 +172,7 @@
 				</div>
 			</div>
 		</div>
+		<div class="fix"><a href="#top"><img src="images/meishiniang3.png" style="width:180px;"></a></div>
 	</body>
 	<script type="text/javascript">
 		$("#btn-pre").click(function(){
@@ -187,6 +199,14 @@
           });                           
         });
 
+
+		var preLi=null;
+		function select(_this){
+			$("li").removeClass("back-col");
+			if(preLi) preLi.style.cssText="";
+			_this.style.cssText="background-color:#ADADAD";
+			preLi=_this;
+		}
 	</script>
 	<style type="text/css">
         .swiper-container {
@@ -203,5 +223,12 @@
         	background-image: url(src/images/slide_right.png);
         	background-size: 100%;
         }
+        .back-col{
+			background-color: #ADADAD;
+		}
+		#flow li{
+			height: 18%;
+			padding-top: 4%;
+		}
     </style>
 </html>
