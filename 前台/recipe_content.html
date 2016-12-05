@@ -8,8 +8,17 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/amazeui.min.js"></script>
+		<style>
+			.fix{ 
+				position: fixed;
+				right: 0;
+				bottom: 50px;
+				z-index: 10;
+			}
+		</style>
 	</head>
 	<body>
+		<a name="top">
 		<div class="top">
 			<div class="top_center">
 				<div class="logo">
@@ -22,8 +31,8 @@
 					</div>
 				</div>
 				<div class="login">
-					<a href="#">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="#">注册</a>
+					<a href="login_user.html">登录</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="regist_user.html">注册</a>
 				</div>
 			</div>
 		</div>
@@ -67,60 +76,66 @@
 				</div>
 			</div>
 		</div>
-		<div class="recipe_content_page_cailiao">
-			<p class="recipe_content_page_cailiao_1">用料</p>
-			<p class="recipe_content_page_cailiao_2">高筋面粉100g，鸡蛋30g，黄油100g，糖粉40g，玉米淀粉50g</p>
-		</div>
-		<div class="recipe_content_page_make">
-			<p class="recipe_content_page_cailiao_1">黄油曲奇的做法</p>
-			<hr/>
-			<p class="recipe_content_page_buzhou"><span class="recipe_content_page_num">1.&nbsp;</span>黄油室温充分软化成膏状，加入糖粉打发到颜色变浅，呈羽毛状</p>
-			<img src="images/huangyouquqi1.jpg" style="width:75%;margin-left:7%;">
-			<p class="recipe_content_page_buzhou"><span class="recipe_content_page_num">2.&nbsp;</span>蛋液充分打散变浅，分三次加入，每次加入后用刮刀按压至全部吸收后再加入剩下的蛋液，蛋液全部拌入后的状态</p>
-			<img src="images/huangyouquqi2.jpg" style="width:75%;margin-left:7%;">
-			<p class="recipe_content_page_buzhou"><span class="recipe_content_page_num">3.&nbsp;</span>筛入混合均匀的高筋面粉与淀粉，刮刀按压均匀，不颗粒</p>
-			<img src="images/huangyouquqi3.jpg" style="width:75%;margin-left:7%;">
-			<p class="recipe_content_page_buzhou"><span class="recipe_content_page_num">4.&nbsp;</span>将太阳花裱花嘴装入裱花袋，放入曲奇面糊，挤入不沾烤盘，如果用普通烤盘请垫油纸，烤箱预热200度，烤约15分钟左右</p>
-			<img src="images/huangyouquqi4.jpg" style="width:75%;margin-left:7%;">
-			<p class="recipe_content_page_buzhou"><span class="recipe_content_page_num">5.&nbsp;</span>完成</p>
-			<img src="images/huangyouquqi5.jpg" style="width:75%;margin-left:7%;">
-		</div>
-		<div class="recipe_content_page_commit">
-			<div>
-				<div class="recipe_content_page_commit_img"><img src="images/head1.jpg" class="recipe_content_page_commit_img_image"></div>
-				<div class="recipe_content_page_commit_content"><textarea rows="3" cols="50"></textarea></div>
-				<div class="recipe_content_page_commit_submit"><button style="background-color:red;color:white;border-radius:5px;">提交评论</button></div>
+		<div style="width:1000px;margin:0 auto">
+			<div class="recipe_content_page_cailiao">
+				<p class="recipe_content_page_cailiao_1">用料</p>
+				<p class="recipe_content_page_cailiao_2">高筋面粉100g，鸡蛋30g，黄油100g，糖粉40g，玉米淀粉50g</p>
 			</div>
-			<hr/>
-			<div>
-				<div class="recipe_content_page_commit_1">
-					<div class="recipe_content_page_commit_1_img">
-						<img src="images/head1.jpg" style="width:100%;">
-						<div style="text-align:center;font-size:13px;">三寸阳</div>
-					</div>
-					<div class="recipe_content_page_commit_1_content">
-						<p class="recipe_content_page_commit_1_content_title">不错哦233</p>
-						<p class="recipe_content_page_commit_1_content_time">发表于2016-11-30 16:19:44</p>
-					</div>
+		</div>
+		<div style="width:1000px;margin:0 auto">
+			<div class="recipe_content_page_make">
+				<p class="recipe_content_page_cailiao_1">黄油曲奇的做法</p>
+				<hr/>
+				<p class="recipe_content_page_buzhou"><span class="recipe_content_page_num">1.&nbsp;</span>黄油室温充分软化成膏状，加入糖粉打发到颜色变浅，呈羽毛状</p>
+				<img src="images/huangyouquqi1.jpg" style="width:75%;margin-left:7%;">
+				<p class="recipe_content_page_buzhou"><span class="recipe_content_page_num">2.&nbsp;</span>蛋液充分打散变浅，分三次加入，每次加入后用刮刀按压至全部吸收后再加入剩下的蛋液，蛋液全部拌入后的状态</p>
+				<img src="images/huangyouquqi2.jpg" style="width:75%;margin-left:7%;">
+				<p class="recipe_content_page_buzhou"><span class="recipe_content_page_num">3.&nbsp;</span>筛入混合均匀的高筋面粉与淀粉，刮刀按压均匀，不颗粒</p>
+				<img src="images/huangyouquqi3.jpg" style="width:75%;margin-left:7%;">
+				<p class="recipe_content_page_buzhou"><span class="recipe_content_page_num">4.&nbsp;</span>将太阳花裱花嘴装入裱花袋，放入曲奇面糊，挤入不沾烤盘，如果用普通烤盘请垫油纸，烤箱预热200度，烤约15分钟左右</p>
+				<img src="images/huangyouquqi4.jpg" style="width:75%;margin-left:7%;">
+				<p class="recipe_content_page_buzhou"><span class="recipe_content_page_num">5.&nbsp;</span>完成</p>
+				<img src="images/huangyouquqi5.jpg" style="width:75%;margin-left:7%;">
+			</div>
+		</div>
+		<div style="width:1000px;margin:0 auto">
+			<div class="recipe_content_page_commit">
+				<div>
+					<div class="recipe_content_page_commit_img"><img src="images/head1.jpg" class="recipe_content_page_commit_img_image"></div>
+					<div class="recipe_content_page_commit_content"><textarea rows="3" cols="57"></textarea></div>
+					<div class="recipe_content_page_commit_submit"><button style="background-color:red;color:white;border-radius:5px;">提交评论</button></div>
 				</div>
-				<div class="recipe_content_page_commit_2">
-					<div class="recipe_content_page_commit_1_img">
-						<img src="images/head1.jpg" style="width:100%;">
-						<div style="text-align:center;font-size:13px;">三寸阳</div>
+				<hr/>
+				<div>
+					<div class="recipe_content_page_commit_1">
+						<div class="recipe_content_page_commit_1_img">
+							<img src="images/head1.jpg" style="width:100%;">
+							<div style="text-align:center;font-size:13px;">三寸阳</div>
+						</div>
+						<div class="recipe_content_page_commit_1_content">
+							<p class="recipe_content_page_commit_1_content_title">不错哦233</p>
+							<p class="recipe_content_page_commit_1_content_time">发表于2016-11-30 16:19:44</p>
+						</div>
 					</div>
-					<div class="recipe_content_page_commit_1_content">
-						<p class="recipe_content_page_commit_1_content_title">曲奇预拌粉可以换成蛋糕预拌粉么</p>
-						<p class="recipe_content_page_commit_1_content_time">发表于2016-11-30 16:19:44</p>
+					<div class="recipe_content_page_commit_2">
+						<div class="recipe_content_page_commit_1_img">
+							<img src="images/head1.jpg" style="width:100%;">
+							<div style="text-align:center;font-size:13px;">三寸阳</div>
+						</div>
+						<div class="recipe_content_page_commit_1_content">
+							<p class="recipe_content_page_commit_1_content_title">曲奇预拌粉可以换成蛋糕预拌粉么</p>
+							<p class="recipe_content_page_commit_1_content_time">发表于2016-11-30 16:19:44</p>
+						</div>
 					</div>
-				</div>
-				<div class="recipe_content_page_commit_2">
-					<div class="recipe_content_page_commit_1_img">
-						<img src="images/head1.jpg" style="width:100%;">
-						<div style="text-align:center;font-size:13px;">三寸阳</div>
-					</div>
-					<div class="recipe_content_page_commit_1_content">
-						<p class="recipe_content_page_commit_1_content_title">看着非常棒，ok=.=</p>
-						<p class="recipe_content_page_commit_1_content_time">发表于2016-11-30 16:19:44</p>
+					<div class="recipe_content_page_commit_2">
+						<div class="recipe_content_page_commit_1_img">
+							<img src="images/head1.jpg" style="width:100%;">
+							<div style="text-align:center;font-size:13px;">三寸阳</div>
+						</div>
+						<div class="recipe_content_page_commit_1_content">
+							<p class="recipe_content_page_commit_1_content_title">看着非常棒，ok=.=</p>
+							<p class="recipe_content_page_commit_1_content_time">发表于2016-11-30 16:19:44</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -163,5 +178,6 @@
 				</div>
 			</div>
 		</div>
+		<div class="fix"><a href="#top"><img src="images/meishiniang8.png" style="width:180px;"></a></div>
 	</body>
 </html>
