@@ -14,7 +14,7 @@
 .login_bg{ 
 	height: 290px;
 	border: 1px solid #BEBEBE;
-	width: 34%;
+	width: 450px;
 	margin: 0 auto;
 	margin-top: 70px;
 	border-radius: 10px;
@@ -33,13 +33,13 @@
 .login_bd{ 
 	margin-left: 10%;
 	margin-top: 20px;
-	font-family: '宋体';
 }
 .aa{ 
 	font-size: 14px;
 }
 .username1{ 
 	border-radius: 3px 0px 0px 3px;
+	width: 70px;
 }
 .username2{ 
 	border-radius: 0px 3px 3px 0px;
