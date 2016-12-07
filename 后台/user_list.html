@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/admin_add.css"/>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/amazeui.min.js"></script>
+		<script src="js/check.js"></script>
 	</head>
 	<body>
 		<div class="am-topbar topbar topbar_zipad">
@@ -108,6 +109,13 @@
 				</ul>
 			</div>
 			<div class="div2_1">
+				<div>
+					<ul class="am-breadcrumb am-breadcrumb-slash">
+						<li><a href="log_index.html">首页</a></li>
+						<li>用户帐号管理</li>
+						<li><a href="user_list.html">用户帐号列表</a></li>
+					</ul>
+				</div>
 				<div class="hd">用户帐号列表</div>
 				<button class="button button_add">&nbsp;批量恢复使用&nbsp;</button>
 				<button class="button button_add">&nbsp;批量停用&nbsp;</button>
@@ -119,18 +127,18 @@
 				<div class="bd_list">
 					<table class="am-table am-table-bordered am-table-radius am-table-striped am-table-centered">
 						<tr class="tablefonta">
-							<td style="width:8%;"><input type="checkbox" name="check_all">&nbsp;全选</td>
+							<td style="width:9%;"><input type="checkbox" id="selAll">&nbsp;全选</td>
 							<td>ID</td>
 							<td>用户名</td>
-							<td style="width:20%;">用户头像</td>
-							<td>用户个人签名</td>
+							<td style="width:15%;">用户头像</td>
+							<td style="width:35%;">用户个人签名</td>
 							<td>操作</td>
 						</tr>
 						<tr>
 							<td><input type="checkbox" name="check_all"></td>
 							<td>1</td>
 							<td>abc123</td>
-							<td><img src="images/1.jpg" style="width:30%"></td>
+							<td><img src="images/1.jpg" style="width:50%;"></td>
 							<td>天天美食，天天健康</td>
 							<td><i class="am-icon-check"></i>恢复使用&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="am-icon-warning"></i>停用</a></td>
 						</tr>
@@ -138,7 +146,7 @@
 							<td><input type="checkbox" name="check_all"></td>
 							<td>2</td>
 							<td>abc123</td>
-							<td><img src="images/1.jpg" style="width:30%"></td>
+							<td><img src="images/1.jpg" style="width:50%"></td>
 							<td>天天美食，天天健康</td>
 							<td><i class="am-icon-check"></i>恢复使用&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="am-icon-warning"></i>停用</a></td>
 						</tr>
@@ -146,7 +154,7 @@
 							<td><input type="checkbox" name="check_all"></td>
 							<td>3</td>
 							<td>abc123</td>
-							<td><img src="images/1.jpg" style="width:30%"></td>
+							<td><img src="images/1.jpg" style="width:50%"></td>
 							<td>天天美食，天天健康</td>
 							<td><i class="am-icon-check"></i>恢复使用&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="am-icon-warning"></i>停用</a></td>
 						</tr>
@@ -154,7 +162,7 @@
 							<td><input type="checkbox" name="check_all"></td>
 							<td>4</td>
 							<td>abc123</td>
-							<td><img src="images/1.jpg" style="width:30%"></td>
+							<td><img src="images/1.jpg" style="width:50%"></td>
 							<td>天天美食，天天健康</td>
 							<td><a href="#"><i class="am-icon-check"></i>恢复使用</a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="am-icon-warning"></i>停用</td>
 						</tr>
@@ -162,7 +170,7 @@
 							<td><input type="checkbox" name="check_all"></td>
 							<td>5</td>
 							<td>abc123</td>
-							<td><img src="images/1.jpg" style="width:30%"></td>
+							<td><img src="images/1.jpg" style="width:50%"></td>
 							<td>天天美食，天天健康</td>
 							<td><a href="#"><i class="am-icon-check"></i>恢复使用</a>&nbsp;&nbsp;&nbsp;&nbsp;<i class="am-icon-warning"></i>停用</td>
 						</tr>
@@ -170,7 +178,7 @@
 							<td><input type="checkbox" name="check_all"></td>
 							<td>6</td>
 							<td>abc123</td>
-							<td><img src="images/1.jpg" style="width:30%"></td>
+							<td><img src="images/1.jpg" style="width:50%"></td>
 							<td>天天美食，天天健康</td>
 							<td><i class="am-icon-check"></i>恢复使用&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="am-icon-warning"></i>停用</a></td>
 						</tr>
@@ -178,7 +186,7 @@
 							<td><input type="checkbox" name="check_all"></td>
 							<td>7</td>
 							<td>abc123</td>
-							<td><img src="images/1.jpg" style="width:30%"></td>
+							<td><img src="images/1.jpg" style="width:50%"></td>
 							<td>天天美食，天天健康</td>
 							<td><i class="am-icon-check"></i>恢复使用&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="am-icon-warning"></i>停用</a></td>
 						</tr>
@@ -186,7 +194,7 @@
 							<td><input type="checkbox" name="check_all"></td>
 							<td>8</td>
 							<td>abc123</td>
-							<td><img src="images/1.jpg" style="width:30%"></td>
+							<td><img src="images/1.jpg" style="width:50%"></td>
 							<td>天天美食，天天健康</td>
 							<td><i class="am-icon-check"></i>恢复使用&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="am-icon-warning"></i>停用</a></td>
 						</tr>
@@ -194,7 +202,7 @@
 							<td><input type="checkbox" name="check_all"></td>
 							<td>9</td>
 							<td>abc123</td>
-							<td><img src="images/1.jpg" style="width:30%"></td>
+							<td><img src="images/1.jpg" style="width:50%"></td>
 							<td>天天美食，天天健康</td>
 							<td><i class="am-icon-check"></i>恢复使用&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="am-icon-warning"></i>停用</a></td>
 						</tr>
@@ -202,7 +210,7 @@
 							<td><input type="checkbox" name="check_all"></td>
 							<td>10</td>
 							<td>abc123</td>
-							<td><img src="images/1.jpg" style="width:30%"></td>
+							<td><img src="images/1.jpg" style="width:50%"></td>
 							<td>天天美食，天天健康</td>
 							<td><i class="am-icon-check"></i>恢复使用&nbsp;&nbsp;&nbsp;&nbsp;<a href="#"><i class="am-icon-warning"></i>停用</a></td>
 						</tr>
