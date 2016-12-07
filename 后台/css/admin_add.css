@@ -7,10 +7,10 @@
 	margin: 4% 5% 4% 6%;
 }
 .bd_table{ 
-	width: 40%;
+	width: 60%;
 }
 .bd_table2{ 
-	width:50%;
+	width:60%;
 }
 .bd_table3{ 
 	width:80%;
@@ -21,8 +21,11 @@
 .bd_table_tr{ 
 	background-color:#E0E0E0;
 }
+.bg_table_title{ 
+	width: 130px;
+}
 .bg_table_input{ 
-	width:100%;
+	width: 100%;
 }
 .button{ 
 	background-color: #46A3FF;
