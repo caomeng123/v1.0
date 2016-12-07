@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>美食姬</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/amazeui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="src/jquery.skidder.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/amazeui.min.js"></script>
+		<style>
+			a{
+				color: black;
+			}
+			.fix{ 
+				position: fixed;
+				right: 0;
+				bottom: 50px;
+				z-index: 10;
+			}
+		</style>
+	</head>
+	<body>
+		<a name="top">
+		<div class="top">
+			<div class="top_center">
+				<div class="logo">
+					<img src="images/logo.jpg" class="logo_image">
+				</div>
+				<div class="search">
+					<div class="search1">
+						<input type="text" class="search_input">
+						<a href="#"><button class="search_search">&nbsp;&nbsp;搜&nbsp;索&nbsp;&nbsp;</button></a>
+					</div>
+				</div>
+				<div class="login">
+					<a href="per_restaurant.html">abc12345</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="login_restaurant.html">退出登录</a>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="nav_center">
+				<ul class="am-nav am-nav-pills am-nav-justify nav_a">
+					<li class="nav_a_index"><a href="index.html">首页</a></li>
+					<li><a href="recipe_list.html">菜谱大全</a></li>
+					<li><a href="restaurant_list.html">店家分享</a></li>
+					<li><a href="kitchen_list.html">厨房百科</a></li>
+					<li><a href="health_list.html">饮食健康</a></li>
+					<li><a href="chat_list.html">讨论区</a></li>					
+				</ul>
+			</div>
+		</div>
+		<div class="change">
+			<div class="slideshow" style="height: 0; margin-top:1px;overflow: hidden">
+				<div class="slide"><a href="recipe_content.html"><img src="./images/1.jpg"></a></div>
+				<div class="slide"><a href="recipe_content.html"><img src="./images/2.jpg"></a></div>
+				<div class="slide"><a href="recipe_content.html"><img src="./images/3.jpg"></a></div>
+				<div class="slide"><a href="recipe_content.html"><img src="./images/4.jpg"></a></div>
+				<div class="slide"><a href="recipe_content.html"><img src="./images/5.jpg"></a></div>
+			</div>
+		</div>
+		<div class="health">
+			<div class="health_title">
+				饮食健康，11月~
+				<div class="health_more"><a href="health_list.html" class="health_font">更多信息>&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+			</div>
+			<div class="am-g">
+				<div class="am-u-sm-4 health_content">
+					<a href="health_content.html">
+						<div class="health_img"><img src="images/health1.jpg" class="health_image"></div>		
+						<div>金秋美蟹正当时</div>
+					</a>
+				</div>
+				<div class="am-u-sm-4 health_content">
+					<a href="health_content.html">
+						<div class="health_img"><img src="images/health2.jpg" class="health_image"></div>		
+						<div>金秋美蟹正当时</div>
+					</a>
+				</div>
+				<div class="am-u-sm-4 health_content">
+					<a href="health_content.html">
+						<div class="health_img"><img src="images/health3.jpg" class="health_image"></div>		
+						<div>金秋美蟹正当时</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="health">
+			<div class="health_title">
+				厨房食材百科
+				<div class="health_more"><a href="kitchen_list.html" class="health_font">更多食材>&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+			</div>
+			<div class="kitchen_change">
+				<ul class="am-nav am-nav-tabs">
+					<li id="one"><a href="kitchen_list.html" onmouseover="chgColor(this)" class="foc">水果</a></li>
+					<li id="two"><a href="kitchen_list.html" onmouseover="chgColor(this)">海鲜</a></li>
+					<li id="three"><a href="kitchen_list.html" onmouseover="chgColor(this)">蔬菜</a></li>
+					<li id="four"><a href="kitchen_list.html" onmouseover="chgColor(this)">五谷</a></li>
+					<li id="five"><a href="kitchen_list.html" onmouseover="chgColor(this)">禽类</a></li>
+					<li id="six"><a href="kitchen_list.html" onmouseover="chgColor(this)">饮品</a></li>
+				</ul>
+			</div>
+			<div class="am-g" id="shuiguo">
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/apple.jpg" class="health_image"></div>
+						<div>苹果</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/pineapple.jpg" class="health_image"></div>	
+						<div>菠萝</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/strawberry.jpg" class="health_image"></div>	
+						<div>草莓</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/orange.jpg" class="health_image"></div>	
+						<div>橙子</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/grapes.jpg" class="health_image"></div>	
+						<div>葡萄</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/peach.jpg" class="health_image"></div>	
+						<div>桃</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="am-g" id="haixian">
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/lobster.jpg" class="health_image"></div>
+						<div>龙虾</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/crab.jpg" class="health_image"></div>	
+						<div>螃蟹</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/salmon.jpg" class="health_image"></div>	
+						<div>三文鱼</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/non.jpg" class="health_image"></div>	
+						<div>海蛎</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/octopus.jpg" class="health_image"></div>	
+						<div>章鱼</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/fish.jpg" class="health_image"></div>	
+						<div>鱼类</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="am-g" id="shucai" >
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/cucumber.jpg" class="health_image"></div>
+						<div>黄瓜</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/carrots.jpg" class="health_image"></div>	
+						<div>胡萝卜</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/peppers.jpg" class="health_image"></div>	
+						<div>青椒</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/potatoes.jpg" class="health_image"></div>	
+						<div>土豆</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/tomato.jpg" class="health_image"></div>	
+						<div>西红柿</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/onions.jpg" class="health_image"></div>	
+						<div>洋葱</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="am-g" id="wugu" >
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/redjujube.jpg" class="health_image"></div>
+						<div>红枣</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/melonseeds.jpg" class="health_image"></div>	
+						<div>瓜子</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/plum.jpg" class="health_image"></div>	
+						<div>话梅</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/walnut.jpg" class="health_image"></div>	
+						<div>核桃</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/wheat.jpg" class="health_image"></div>	
+						<div>小麦</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/peanuts.jpg" class="health_image"></div>	
+						<div>花生米</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="am-g" id="qinlei" >
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/duck.jpg" class="health_image"></div>
+						<div>鸭</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/goose.jpg" class="health_image"></div>	
+						<div>鹅</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/fish.jpg" class="health_image"></div>	
+						<div>鱼</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/cock.jpg" class="health_image"></div>	
+						<div>鸡</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/cow.jpg" class="health_image"></div>	
+						<div>牛</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/donkey.jpg" class="health_image"></div>	
+						<div>驴</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="am-g" id="yinpin" >
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/coffee.jpg" class="health_image"></div>
+						<div>咖啡</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/milk.jpg" class="health_image"></div>	
+						<div>牛奶</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/juice.jpg" class="health_image"></div>	
+						<div>橙汁</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/kele.jpg" class="health_image"></div>	
+						<div>可乐</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/water.jpg" class="health_image"></div>	
+						<div>水</div>
+					</a>
+				</div>
+				<div class="am-u-sm-2 health_content">
+					<a href="kitchen_content.html">
+						<div class="kitchen_img"><img src="images/wine.jpg" class="health_image"></div>	
+						<div>酒</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="restaurant">
+			<div class="health_title">
+				店家分享，精选菜谱
+				<div class="health_more"><a href="restaurant_list.html" class="health_font">更多店家>&nbsp;&nbsp;&nbsp;&nbsp;</a></div>
+			</div>
+			<div>
+				<div class="restaurant_content">
+					<div class="label"><a href="#" style="color:white">&nbsp;&nbsp;天天饭店&nbsp;&nbsp;</a></div>
+					<div class="restaurant_img"  id="pic11"><img src="images/restaurant1.jpg" class="health_image"></div>
+					<div class="restaurant_img"  id="pic12"><img src="images/restaurant2.jpg" class="health_image"></div>
+					<div class="restaurant_img"  id="pic13"><img src="images/restaurant3.jpg" class="health_image"></div>		
+					<div class="restaurant_recipe_title">
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon(this)"><li id="fon11"><a href="restaurant_content.html"  class="fon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宫保鸡丁</a></li></div>
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon(this)"><li id="fon12"><a href="restaurant_content.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;重庆鸡公煲</a></li></div>
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon(this)"><li id="fon13"><a href="restaurant_content.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;麻辣香锅</a></li></div>
+					</div>
+				</div>
+				<div class="restaurant_content2">
+					<div class="label"><a href="#" style="color:white">&nbsp;&nbsp;天天饭店&nbsp;&nbsp;</a></div>
+					<div class="restaurant_img"  id="pic21"><img src="images/yuxiang.jpg" class="health_image"></div>
+					<div class="restaurant_img"  id="pic22"><img src="images/jingjiang.jpg" class="health_image"></div>
+					<div class="restaurant_img"  id="pic23"><img src="images/pidan.jpg" class="health_image"></div>	
+					<div class="restaurant_recipe_title">
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon1(this)"><li id="fon21"><a href="restaurant_content.html"  class="fon1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;鱼香肉丝</a></li></div>
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon1(this)"><li id="fon22"><a href="restaurant_content.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京酱肉丝</a></li></div>
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon1(this)"><li id="fon23"><a href="restaurant_content.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;皮蛋豆腐</a></li></div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="restaurant_content">
+					<div class="label"><a href="#" style="color:white">&nbsp;&nbsp;天天饭店&nbsp;&nbsp;</a></div>
+					<div class="restaurant_img"  id="pic31"><img src="images/suanni.jpg" class="health_image"></div>
+					<div class="restaurant_img"  id="pic32"><img src="images/gankao.jpg" class="health_image"></div>
+					<div class="restaurant_img"  id="pic33"><img src="images/huoguo.jpg" class="health_image"></div>		
+					<div class="restaurant_recipe_title">
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon2(this)"><li id="fon31"><a href="restaurant_content.html"  class="fon2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;蒜泥黄瓜</a></li></div>
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon2(this)"><li id="fon32"><a href="restaurant_content.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;干烤鱼</a></li></div>
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon2(this)"><li id="fon33"><a href="restaurant_content.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火锅鸡</a></li></div>
+					</div>
+				</div>
+				<div class="restaurant_content2">
+					<div class="label"><a href="#" style="color:white">&nbsp;&nbsp;天天饭店&nbsp;&nbsp;</a></div>
+					<div class="restaurant_img"  id="pic41"><img src="images/mala.jpg" class="health_image"></div>
+					<div class="restaurant_img"  id="pic42"><img src="images/kaorou.jpg" class="health_image"></div>
+					<div class="restaurant_img"  id="pic43"><img src="images/kaoniu.jpg" class="health_image"></div>	
+					<div class="restaurant_recipe_title">
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon3(this)"><li id="fon41"><a href="restaurant_content.html"  class="fon3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;麻辣烫</a></li></div>
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon3(this)"><li id="fon42"><a href="restaurant_content.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;烤肉</a></li></div>
+						<div class="restaurant_recipe_title_a" onmouseover="chgFon3(this)"><li id="fon43"><a href="restaurant_content.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;烤牛排</a></li></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="recipe">
+			<div class="recipe_title">
+				<div style="margin-top:400px;">美食达人，菜谱交流<div class="health_more"><a href="recipe_list.html" class="health_font">更多菜谱>&nbsp;&nbsp;&nbsp;&nbsp;</a></div></div>
+			</div>
+			<div>
+				<div class="recipe_content" id="rec"><a href="recipe_content.html">
+					<div class="recipe_img"><img src="images/yuxiang.jpg" class="recipe_image"></div>		
+					<div id="a1">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;鱼香肉丝</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;会飞的猪</div>
+					</div>
+					<div style="display:none" id="a2">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+					</div></a>
+				</div>
+				<div class="recipe_content2" id="rec1"><a href="recipe_content.html">
+					<div class="recipe_img"><img src="images/jingjiang.jpg" class="recipe_image"></div>		
+					<div id="b1">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;京酱肉丝</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;小新</div>
+					</div>
+					<div style="display:none" id="b2">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+					</div></a>
+				</div>
+				<div class="recipe_content2" id="rec2"><a href="recipe_content.html">
+					<div class="recipe_img"><img src="images/pidan.jpg" class="recipe_image"></div>		
+					<div id="c1">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;皮蛋豆腐</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;我爱吃豆腐</div>
+					</div>
+					<div style="display:none" id="c2">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+					</div></a>
+				</div>
+				<div class="recipe_content2" id="rec3"><a href="recipe_content.html">
+					<div class="recipe_img"><img src="images/suanni.jpg" class="recipe_image"></div>		
+					<div id="d1">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;蒜泥黄瓜</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;黄瓜大仙</div>
+					</div>
+					<div style="display:none" id="d2">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+					</div></a>
+				</div>
+			</div>
+			<div class="recipe_why">
+				<div class="recipe_content" id="rec4"><a href="recipe_content.html">
+					<div class="recipe_img"><img src="images/gankao.jpg" class="recipe_image"></div>		
+					<div id="e1">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;烤鱼</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;abc123</div>
+					</div>
+					<div style="display:none" id="e2">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+					</div></a>
+				</div>
+				<div class="recipe_content2" id="rec5"><a href="recipe_content.html">
+					<div class="recipe_img"><img src="images/huoguo.jpg" class="recipe_image"></div>		
+					<div id="f1">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;火锅鸡</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;沧州特产</div>
+					</div>
+					<div style="display:none" id="f2">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+					</div></a>
+				</div>
+				<div class="recipe_content2" id="rec6"><a href="recipe_content.html">
+					<div class="recipe_img"><img src="images/kaorou.jpg" class="recipe_image"></div>		
+					<div id="g1">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;烤肉</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;大大大大</div>
+					</div>
+					<div style="display:none" id="g2">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+					</div></a>
+				</div>
+				<div class="recipe_content2" id="rec7"><a href="recipe_content.html">
+					<div class="recipe_img"><img src="images/kaoniu.jpg" class="recipe_image"></div>		
+					<div id="h1">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;牛排</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;塔尔</div>
+					</div>
+					<div style="display:none" id="h2">
+						<div class="recipe_a">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+						<div class="recipe_b">&nbsp;&nbsp;&nbsp;&nbsp;caomeng</div>
+					</div></a>
+				</div>
+			</div>
+		</div>
+		<div class="index_link">
+			<div class="link_center">
+				<br/>
+				<div class="link_title">友情链接</div>
+				<div class="link_border">
+					<div class="link_content">
+						<table  width="100%" height="50px">
+							<tr>
+								<td style="width:8.33%;">美食</td>
+								<td style="width:8.33%;">甜点</td>
+								<td style="width:8.33%;">厨房必备</td>
+								<td style="width:8.33%;">主食</td>
+								<td style="width:8.33%;">商家参考</td>
+								<td style="width:8.33%;">天天美食</td>
+								<td style="width:8.33%;">123菜谱大全</td>
+								<td style="width:8.33%;">爱奇艺</td>
+								<td style="width:8.33%;">音乐</td>
+								<td style="width:8.33%;">图吧</td>
+								<td style="width:8.33%;">饮食健康</td>
+								<td style="width:8.33%;">搜狐论坛</td>
+							</tr>
+							<tr>
+								<td style="width:8.33%;">赶集网</td>
+								<td style="width:8.33%;">美食网</td>
+								<td style="width:8.33%;">餐饮</td>
+								<td style="width:8.33%;">杂志网</td>
+								<td style="width:8.33%;">厨师网</td>
+								<td style="width:8.33%;">好豆菜谱</td>
+							</tr>
+						</table>
+					</div>
+					<div class="link_bottom">
+						关于我们&nbsp;&nbsp;|&nbsp;&nbsp;联系我们&nbsp;&nbsp;|&nbsp;&nbsp;最新动态&nbsp;&nbsp;|&nbsp;&nbsp;网站地图
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fix"><a href="#top"><img src="images/meishiniang2.png" style="width:180px;"></a></div>
+	</body>
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="js/imagesloaded.js"></script>
+	<script src="js/smartresize.js"></script>
+	<script src="src/jquery.skidder.js"></script>
+	<script type="text/javascript">
+		$('.slideshow').each( function() {
+			  var $slideshow = $(this);
+			  $slideshow.imagesLoaded( function() {
+				$slideshow.skidder({
+				  slideClass    : '.slide',
+				  animationType : 'css',
+				  scaleSlides   : true,
+				  maxWidth : 2000,
+				  maxHeight: 400,
+				  paging        : true,
+				  autoPaging    : true,
+				  pagingWrapper : ".skidder-pager",
+				  pagingElement : ".skidder-pager-dot",
+				  swiping       : true,
+				  leftaligned   : false,
+				  cycle         : true,
+				  jumpback      : false,
+				  speed         : 400,
+				  autoplay      : true,
+				  autoplayResume: true,
+				  interval      : 5000,
+				  transition    : "slide",
+				  afterSliding  : function() {},
+				  afterInit     : function() {}
+				});
+			  });
+		});
+		// $('.slideshow-nocycle').each( function() {
+		//   var $slideshow = $(this);
+		//   $slideshow.imagesLoaded( function() {
+		//     $slideshow.skidder({
+		//       slideClass    : '.slide',
+		//       scaleSlides   : true,
+		//       maxWidth : 2000,
+		//       maxHeight: 400,
+		//       leftaligned   : true,
+		//       cycle         : false,
+		//       paging        : true,
+		//       swiping       : true,
+		//       jumpback      : false,
+		//       speed         : 400,
+		//       autoplay      : true,
+		//       interval      : 5000,
+		//       afterSliding  : function() {}
+		//     });
+		//   });
+		// });
+		$(window).smartresize(function(){
+			  $('.slideshow').skidder('resize');
+		});
+		var one=document.getElementById("one");
+		var shuiguo=document.getElementById("shuiguo");
+		var two=document.getElementById("two");
+		var haixian=document.getElementById("haixian");
+		haixian.style.display='none';
+		var three=document.getElementById("three");
+		var shucai=document.getElementById("shucai");
+		shucai.style.display='none';
+		var four=document.getElementById("four");
+		var wugu=document.getElementById("wugu");
+		wugu.style.display='none';
+		var five=document.getElementById("five");
+		var qinlei=document.getElementById("qinlei");
+		qinlei.style.display='none';
+		var six=document.getElementById("six");
+		var yinpin=document.getElementById("yinpin");
+		yinpin.style.display='none';
+
+		one.onmouseover=function(){
+			shuiguo.style.display='block';
+			haixian.style.display='none';
+			shucai.style.display='none';
+			wugu.style.display='none';
+			qinlei.style.display='none';
+			yinpin.style.display='none';
+
+		}
+		two.onmouseover=function(){
+			haixian.style.display='block';
+			shuiguo.style.display='none';
+			shucai.style.display='none';
+			wugu.style.display='none';
+			qinlei.style.display='none';
+			yinpin.style.display='none';
+		}
+		three.onmouseover=function(){
+			shucai.style.display='block';
+			shuiguo.style.display='none';
+			haixian.style.display='none';
+			wugu.style.display='none';
+			qinlei.style.display='none';
+			yinpin.style.display='none';
+		}
+		four.onmouseover=function(){
+			wugu.style.display='block';
+			shuiguo.style.display='none';
+			haixian.style.display='none';
+			shucai.style.display='none';
+			qinlei.style.display='none';
+			yinpin.style.display='none';
+		}
+		five.onmouseover=function(){
+			qinlei.style.display='block';
+			shuiguo.style.display='none';
+			haixian.style.display='none';
+			shucai.style.display='none';
+			wugu.style.display='none';
+			yinpin.style.display='none';
+		}
+		six.onmouseover=function(){
+			yinpin.style.display='block';
+			shuiguo.style.display='none';
+			haixian.style.display='none';
+			shucai.style.display='none';
+			wugu.style.display='none';
+			qinlei.style.display='none';
+		}
+		var preDiv=null;
+		function chgColor(_this){
+			$("a").removeClass("foc");
+			if(preDiv) preDiv.style.cssText="";
+			_this.style.cssText="background-color:red;color:white";
+			preDiv=_this;
+		}
+
+		var pic11=document.getElementById("pic11");
+		var fon11=document.getElementById("fon11");
+		var pic12=document.getElementById("pic12");
+		var fon12=document.getElementById("fon12");
+		pic12.style.display="none";
+		var pic13=document.getElementById("pic13");
+		var fon13=document.getElementById("fon13");
+		pic13.style.display="none";
+		fon11.onmouseover=function(){
+			pic11.style.display="block";
+			pic12.style.display="none";
+			pic13.style.display="none";
+		}
+		fon12.onmouseover=function(){
+			pic12.style.display="block";
+			pic11.style.display="none";
+			pic13.style.display="none";
+		}
+		fon13.onmouseover=function(){
+			pic13.style.display="block";
+			pic11.style.display="none";
+			pic12.style.display="none";
+		}
+
+		var pic21=document.getElementById("pic21");
+		var fon21=document.getElementById("fon21");
+		var pic22=document.getElementById("pic22");
+		var fon22=document.getElementById("fon22");
+		pic22.style.display="none";
+		var pic23=document.getElementById("pic23");
+		var fon23=document.getElementById("fon23");
+		pic23.style.display="none";
+		fon21.onmouseover=function(){
+			pic21.style.display="block";
+			pic22.style.display="none";
+			pic23.style.display="none";
+		}
+		fon22.onmouseover=function(){
+			pic22.style.display="block";
+			pic21.style.display="none";
+			pic23.style.display="none";
+		}
+		fon23.onmouseover=function(){
+			pic23.style.display="block";
+			pic21.style.display="none";
+			pic22.style.display="none";
+		}
+
+		var pic31=document.getElementById("pic31");
+		var fon31=document.getElementById("fon31");
+		var pic32=document.getElementById("pic32");
+		var fon32=document.getElementById("fon32");
+		pic32.style.display="none";
+		var pic33=document.getElementById("pic33");
+		var fon33=document.getElementById("fon33");
+		pic33.style.display="none";
+		fon31.onmouseover=function(){
+			pic31.style.display="block";
+			pic32.style.display="none";
+			pic33.style.display="none";
+		}
+		fon32.onmouseover=function(){
+			pic32.style.display="block";
+			pic31.style.display="none";
+			pic33.style.display="none";
+		}
+		fon33.onmouseover=function(){
+			pic33.style.display="block";
+			pic31.style.display="none";
+			pic32.style.display="none";
+		}
+
+		var pic41=document.getElementById("pic41");
+		var fon41=document.getElementById("fon41");
+		var pic42=document.getElementById("pic42");
+		var fon42=document.getElementById("fon42");
+		pic42.style.display="none";
+		var pic43=document.getElementById("pic43");
+		var fon43=document.getElementById("fon43");
+		pic43.style.display="none";
+		fon41.onmouseover=function(){
+			pic41.style.display="block";
+			pic42.style.display="none";
+			pic43.style.display="none";
+		}
+		fon42.onmouseover=function(){
+			pic42.style.display="block";
+			pic41.style.display="none";
+			pic43.style.display="none";
+		}
+		fon43.onmouseover=function(){
+			pic43.style.display="block";
+			pic41.style.display="none";
+			pic42.style.display="none";
+		}
+
+		var preImg=null;
+		function chgFon(_this){
+			$("a").removeClass("fon");
+			if(preImg) preImg.style.cssText="";
+			_this.style.cssText="font-weight: bold;font-size: 19px";
+			preImg=_this;
+		}
+		var preImg1=null;
+		function chgFon1(_this){
+			$("a").removeClass("fon1");
+			if(preImg1) preImg1.style.cssText="";
+			_this.style.cssText="font-weight: bold;font-size: 19px";
+			preImg1=_this;
+		}
+		var preImg2=null;
+		function chgFon2(_this){
+			$("a").removeClass("fon2");
+			if(preImg2) preImg2.style.cssText="";
+			_this.style.cssText="font-weight: bold;font-size: 19px";
+			preImg2=_this;
+		}
+		var preImg3=null;
+		function chgFon3(_this){
+			$("a").removeClass("fon3");
+			if(preImg3) preImg3.style.cssText="";
+			_this.style.cssText="font-weight: bold;font-size: 19px";
+			preImg3=_this;
+		}
+
+		var rec=document.getElementById("rec");
+		var a1=document.getElementById("a1");
+		var a2=document.getElementById("a2");
+		rec.onmouseover=function(){
+			a1.style.display="none";
+			a2.style.display="block";
+			$("#a2").addClass("bck");
+		}
+		rec.onmouseout=function(){
+			a1.style.display="block";
+			a2.style.display="none";
+			$("#a2").removeClass("bck");
+		}
+
+		var rec1=document.getElementById("rec1");
+		var b1=document.getElementById("b1");
+		var b2=document.getElementById("b2");
+		rec1.onmouseover=function(){
+			b1.style.display="none";
+			b2.style.display="block";
+			$("#b2").addClass("bck");
+		}
+		rec1.onmouseout=function(){
+			b1.style.display="block";
+			b2.style.display="none";
+			$("#b2").removeClass("bck");
+		}
+
+		var rec2=document.getElementById("rec2");
+		var c1=document.getElementById("c1");
+		var c2=document.getElementById("c2");
+		rec2.onmouseover=function(){
+			c1.style.display="none";
+			c2.style.display="block";
+			$("#c2").addClass("bck");
+		}
+		rec2.onmouseout=function(){
+			c1.style.display="block";
+			c2.style.display="none";
+			$("#c2").removeClass("bck");
+		}
+
+		var rec3=document.getElementById("rec3");
+		var d1=document.getElementById("d1");
+		var d2=document.getElementById("d2");
+		rec3.onmouseover=function(){
+			d1.style.display="none";
+			d2.style.display="block";
+			$("#d2").addClass("bck");
+		}
+		rec3.onmouseout=function(){
+			d1.style.display="block";
+			d2.style.display="none";
+			$("#d2").removeClass("bck");
+		}
+
+		var rec4=document.getElementById("rec4");
+		var e1=document.getElementById("e1");
+		var e2=document.getElementById("e2");
+		rec4.onmouseover=function(){
+			e1.style.display="none";
+			e2.style.display="block";
+			$("#e2").addClass("bck");
+		}
+		rec4.onmouseout=function(){
+			e1.style.display="block";
+			e2.style.display="none";
+			$("#e2").removeClass("bck");
+		}
+
+		var rec5=document.getElementById("rec5");
+		var f1=document.getElementById("f1");
+		var f2=document.getElementById("f2");
+		rec5.onmouseover=function(){
+			f1.style.display="none";
+			f2.style.display="block";
+			$("#f2").addClass("bck");
+		}
+		rec5.onmouseout=function(){
+			f1.style.display="block";
+			f2.style.display="none";
+			$("#f2").removeClass("bck");
+		}
+
+		var rec6=document.getElementById("rec6");
+		var g1=document.getElementById("g1");
+		var g2=document.getElementById("g2");
+		rec6.onmouseover=function(){
+			g1.style.display="none";
+			g2.style.display="block";
+			$("#g2").addClass("bck");
+		}
+		rec6.onmouseout=function(){
+			g1.style.display="block";
+			g2.style.display="none";
+			$("#g2").removeClass("bck");
+		}
+
+		var rec7=document.getElementById("rec7");
+		var h1=document.getElementById("h1");
+		var h2=document.getElementById("h2");
+		rec7.onmouseover=function(){
+			h1.style.display="none";
+			h2.style.display="block";
+			$("#h2").addClass("bck");
+		}
+		rec7.onmouseout=function(){
+			h1.style.display="block";
+			h2.style.display="none";
+			$("#h2").removeClass("bck");
+		}
+	</script>
+</html>
