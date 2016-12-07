@@ -82,8 +82,15 @@ body{
 	color: gray;
 }
 .health_image{ 
+	border-radius: 10px 0 0 10px;
 	width:100%;
-	margin-top: 10px;
+	height: 160px; 
+}
+.health_image1{ 
+	width:100%;
+}
+.health_image2{ 
+	width:100%;
 }
 .health_img{ 
 	height: 180px;
@@ -111,6 +118,7 @@ body{
 	margin-top: 15px;
 	float: left;
 	width: 49%;
+	height: 160px;
 }
 .restaurant_content2{ 
 	background-color: white;
@@ -118,6 +126,7 @@ body{
 	margin-top: 15px;
 	float: right;
 	width: 49%;
+	height: 160px;
 }
 .restaurant_img{ 
 	height: 165px;
@@ -155,6 +164,7 @@ body{
 .recipe_image{ 
 	width:100%;
 	border-radius: 10px 10px 0 0;
+	height: 150px;
 }
 .recipe_content{ 
 	background-color: white;
@@ -359,11 +369,12 @@ body{
 }
 .restaurant_list_page_dianjiatesecaipu_img{ 
 	border-radius: 10px;
+	height: 180px;
 	width: 100%;
 }
 .restaurant_list_page_dianjiatesecaipu_div{ 
 	border: 2px solid #FFD1A4;
-	height: 200px;
+	height: 190px;
 	border-radius: 10px;
 }
 .restaurant_list_page_dianjiatesecaipu_div1{ 
@@ -528,9 +539,11 @@ body{
 }
 .recipe_content_page_content_img_content_head2_p1{ 
 	font-size: 19px;
+	color: gray;
 }
 .recipe_content_page_content_img_content_head2_p2{ 
 	font-size: 14px;
+	color: gray;
 }
 
 .recipe_content_page_cailiao{ 
