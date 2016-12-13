@@ -1,6 +1,6 @@
 /*首页css*/
 body{ 
-	background-color: #FFD1A4;
+	background-color: #FFEFD5;
 	min-width: 960px;
 }
 .top{ 
@@ -104,7 +104,7 @@ body{
 	overflow: hidden;
 }
 .foc{
-	background-color: #ce0000;
+	background-color: red;
 	color: white;
 }
 .restaurant{ 
@@ -260,7 +260,7 @@ body{
 	float: left;
 }
 .recipe_list_page_category_title{ 
-	background-color: #FFD1A4;
+	background-color: #FFEFD5;
 	font-size: 24px;
 	font-weight: bold;
 	color: #ce0000;
@@ -277,12 +277,12 @@ body{
 .recipe_list_page_category_button_up{ 
 	width:100%; 
 	border-radius:10px 10px 0 0;
-	background-color: #FFBB77;
+	background-color: #FFC78E;
 }
 .recipe_list_page_category_button_down{ 
 	width:100%; 
 	border-radius:0 0 10px 10px;
-	background-color: #FFBB77;
+	background-color: #FFC78E;
 }
 .recipe_list_page_content{ 
 	width: 70%;
