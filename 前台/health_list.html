@@ -64,18 +64,18 @@
 				<ul class="am-nav recipe_list_page_category_content">
 					<button class="am-btn am-icon-chevron-up recipe_list_page_category_button_up" id="btn-pre"></button>
 					<div style="height:250px;overflow:scroll;overflow:hidden" id="flow">
-					<li class="back-col" onclick="select(this)"><a href="#" style="color:black">12月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">11月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">10月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">9月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">8月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">7月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">6月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">5月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">4月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">3月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">2月</a></li>
-					<li onclick="select(this)"><a href="#" style="color:black">1月</a></li>
+					<li class="back-col" onclick="select(this)"><a href="javascript:;" style="color:black">12月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">11月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">10月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">9月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">8月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">7月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">6月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">5月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">4月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">3月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">2月</a></li>
+					<li onclick="select(this)"><a href="javascript:;" style="color:black">1月</a></li>
 					</div>
 					<button class="am-btn am-icon-chevron-down recipe_list_page_category_button_down" id="btn-next"></button>
 				</ul>
@@ -205,14 +205,15 @@
 		function select(_this){
 			$("li").removeClass("back-col");
 			if(preLi) preLi.style.cssText="";
-			_this.style.cssText="background-color:#ADADAD";
+			_this.style.cssText="background-color:#D0D0D0";
 			preLi=_this;
 		}
+		
 	</script>
 
 	<style type="text/css">
 		.back-col{
-			background-color: #ADADAD;
+			background-color: #D0D0D0;
 		}
 		#flow li{
 			height: 18%;
