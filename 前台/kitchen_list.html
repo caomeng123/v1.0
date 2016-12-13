@@ -67,16 +67,16 @@
 			<button class="am-icon-chevron-left am-circle" style="float:left" id="btn-pre"></button>
 			<div style="width:925px;overflow-x:hidden;float:left" id="flow"> 
 			    <div style="width:2000px;">       
-			        <div style="width:165px;float:left;text-align:center"><li class="back-col" onclick="select(this)"><a href="#">水果类</a></li></div>        
-			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">海鲜类</a></li></div>            
-			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">维生素</a></li></div>        
-			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">蔬菜类</a></li></div>        
-			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">五谷</a></li></div>
-			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">禽类</a></li></div>        
-			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">饮品</a></li></div>            
-			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">水果类</a></li></div>        
-			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">海鲜类</a></li></div>        
-			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="#">维生素</a></li></div>
+			        <div style="width:165px;float:left;text-align:center"><li class="back-col" onclick="select(this)"><a href="javascript:;">水果类</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="javascript:;">海鲜类</a></li></div>            
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="javascript:;">维生素</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="javascript:;">蔬菜类</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="javascript:;">五谷</a></li></div>
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="javascript:;">禽类</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="javascript:;">饮品</a></li></div>            
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="javascript:;">水果类</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="javascript:;">海鲜类</a></li></div>        
+			        <div style="width:165px;float:left;text-align:center"><li onclick="select(this)"><a href="javascript:;">维生素</a></li></div>
 			    </div>
 			</div>
 			<button class="am-icon-chevron-right am-circle" style="float:right" id="btn-next"></button>
@@ -228,13 +228,13 @@
 		function select(_this){
 			$("li").removeClass("back-col");
 			if(preDiv) preDiv.style.cssText="";
-			_this.style.cssText="background-color:#DCDCDC ";
+			_this.style.cssText="background-color:#D0D0D0 ";
 			preDiv=_this;
 		}
 	</script>
 	<style type="text/css">
 		.back-col{
-			background-color: #DCDCDC ;
+			background-color: #D0D0D0 ;
 		}
 		#flow li{
 			list-style-type: none;
