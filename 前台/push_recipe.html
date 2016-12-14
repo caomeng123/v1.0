@@ -2,12 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>美食姬</title>
+		<title>push_recipe</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/amazeui.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/amazeui.min.js"></script>
+		<script src="js/upload.js"></script>
 	</head>
 	<body>
 		<div class="top">
@@ -82,29 +83,28 @@
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				烹饪时间：
 				<input type="text" style="width:80px;">min
-				<div class="push_recipe_content_jiange" style="font-weight:bold;">成品图片</div>
-				<a href="#"><div style="width:25%;height:250px;border:1px solid gray;"><p style="font-size:50px;color:black;text-align:center;padding-top:30%;">+</p></div></a>
+				<div class="push_recipe_content_jiange" style="font-weight:bold;">成品图片(单击图片重新上传)</div>
+					<label id="imgPreview" style="border: 1px solid gray; display: block; width: 220px; height: 250px; overflow:hidden;">
+				    </label>
+				    <input type="file" name="file" id="upload" onchange="PreviewImage(this)";/>
 				<div class="push_recipe_content_jiange" style="font-weight:bold;">食材</div>
 				<textarea style="width:80%;height:100px;"></textarea>
 				<div class="push_recipe_content_jiange" style="font-weight:bold;">步骤</div>
 				<div style="width:100%" id="parentpoint">
 					<div id="Step" style='position: relative;'>
 						<div id="left"><p name="count" id="count">1&nbsp;</p></div>
-						<div id="left-center"><p id="left-center1">+</p></div>
-						<div id="right-center"><textarea id="right-center1"></textarea></div>
-						<div id="remove"><button class="am-close am-close-alt am-close-spin">&times;</button></div>
+						<div id="center"><textarea id="center1"></textarea></div>
+						<div id="remove" style="margin-right: 160px;><button class="am-close am-close-alt am-close-spin">&times;</button></div>
 					</div>
 					<div id="Step" style='position: relative;'>
 						<div id="left"><p name="count" id="count">2&nbsp;</p></div>
-						<div id="left-center"><p id="left-center1">+</p></div>
-						<div id="right-center"><textarea id="right-center1"></textarea></div>
-						<div id="remove"><button class="am-close am-close-alt am-close-spin">&times;</button></div>
+						<div id="center"><textarea id="center1"></textarea></div>
+						<div id="remove" style="margin-right: 160px;><button class="am-close am-close-alt am-close-spin">&times;</button></div>
 					</div>
 					<div id="Step" style='position: relative;'>
 						<div id="left"><p name="count" id="count">3&nbsp;</p></div>
-						<div id="left-center"><p id="left-center1">+</p></div>
-						<div id="right-center"><textarea id="right-center1"></textarea></div>
-						<div id="remove"><button class="am-close am-close-alt am-close-spin">&times;</button></div>
+						<div id="center"><textarea id="center1"></textarea></div>
+						<div id="remove" style="margin-right: 160px;"><button class="am-close am-close-alt am-close-spin">&times;</button></div>
 					</div>
 				</div>
 				<div style="margin-left:6%"><button style="color:white;background-color:gray;width:19%;height:50px" id="remove_univ_0">+增加一步</button></div>
@@ -156,9 +156,7 @@
         $("#parentpoint button").click(delet); 
     });
     function addStick(){
-    	
-  
-	    var div=$("<div id='Step' style='position: relative;'><div id='left'><p id='count' name='count' value=''>&nbsp;</p></div><div id='remove'><button class='am-close am-close-alt am-close-spin'>&times;</button></div><div id='left-center'><p id='left-center1'>+</p></div><div id='right-center'><textarea id='right-center1'></textarea></div></div>");
+	   var div=$("<div id='Step' style='position: relative;'><div id='left'><p id='count' name='count' value=''>&nbsp;</p></div><div id='center'><textarea id='center1'></textarea></div><div id='remove' style='margin-right: 160px;'><button class='am-close am-close-alt am-close-spin'>&times;</button></div></div>");
 	    $("#parentpoint").append(div);
 	    $("#parentpoint button").unbind("click").bind("click",delet);
 	    var a=new Array();
@@ -198,24 +196,12 @@
         	float:right;
         	margin-top:14%;
         }
-        #left-center{
-        	width:18%;
-        	height:150px;
-        	border:1px solid gray;
-        	float:left;
-        }
-        #left-center1{
-        	font-size:50px;
-        	color:black;
-        	text-align:center;
-        	padding-top:19%;
-        }
-        #right-center{
+        #center{
         	float:left;
         	width:72%;
         	margin-bottom:10px;
         }
-        #right-center1{
+        #center1{
         	width:100%;
         	height:150px;
         	margin-left:10px;
