@@ -688,7 +688,7 @@ body{
 .chat_content_page_img{ 
 	width: 15%;
 	float: left;
-
+	border-top: 1px solid #D0D0D0;
 }
 .chat_content_page_img_image{ 
 	width: 100%;
@@ -697,6 +697,7 @@ body{
 	width: 80%;
 	float: left;
 	padding: 20px;
+	border-top: 1px solid #D0D0D0;
 }
 .chat_content_page_all{
 	margin-top: 20px;	
@@ -708,6 +709,8 @@ body{
 .chat_content_page_commit{ 
 	position: absolute;
 	top: 1200px;
+	border-top: 1px solid #D0D0D0;
+	padding-top: 40px;
 }
 .chat_content_page_commit_img{ 
 	width:15%;
