@@ -84,9 +84,9 @@
 				烹饪时间：
 				<input type="text" style="width:80px;">min
 				<div class="push_recipe_content_jiange" style="font-weight:bold;">成品图片(单击图片重新上传)</div>
-					<label id="imgPreview" style="border: 1px solid gray; display: block; width: 220px; height: 250px; overflow:hidden;">
+					<label for="upload" id="imgPreview" style="border: 1px solid gray; display: block; width: 220px; height: 250px; overflow:hidden;">
 				    </label>
-				    <input type="file" name="file" id="upload" onchange="PreviewImage(this)";/>
+				    <input style="display: none;" type="file" name="file" id="upload" onchange="PreviewImage(this)";/>
 				<div class="push_recipe_content_jiange" style="font-weight:bold;">食材</div>
 				<textarea style="width:80%;height:100px;"></textarea>
 				<div class="push_recipe_content_jiange" style="font-weight:bold;">步骤</div>
@@ -206,5 +206,5 @@
         	height:150px;
         	margin-left:10px;
         }
-		</style>
+</style>
 </html>
