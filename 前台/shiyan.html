@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>美食姬</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/amazeui.min.css"/>
+		<script src="js/jquery.min.js"></script>
+		
+		
+		
+		
+	</head>
+	<body>
+		
+		<div style="width:260px;height:40px">
+			<button class="am-icon-chevron-left am-circle" style="float:left" id="btn-pre"></button>
+			<div style="width:200px;overflow-x:hidden;float:left" id="flow"> 
+			    <div style="width:500px;">       
+			        <div style="width:100px;float:left;text-align:center"><li onclick="select(this)"><img src="images/1.jpg" style="width:100%"></li></div>        
+			        <div style="width:100px;float:left;text-align:center"><li onclick="select(this)"><img src="images/2.jpg" style="width:100%"></li></div>            
+			        <div style="width:100px;float:left;text-align:center"><li onclick="select(this)"><img src="images/3.jpg" style="width:100%"></li></div>        
+			        <div style="width:100px;float:left;text-align:center"><li onclick="select(this)"><img src="images/4.jpg" style="width:100%"></li></div>        
+			        <div style="width:100px;float:left;text-align:center"><li onclick="select(this)"><img src="images/5.jpg" style="width:100%"></li></div>
+			        
+			    </div>
+			</div>
+			<button class="am-icon-chevron-right am-circle" style="float:right" id="btn-next"></button>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		$("#btn-pre").click(function(){
+			$("#flow").animate({
+				'scrollLeft':"+=-100px"
+			},2000);
+		});
+		$("#btn-next").click(function(){
+			$("#flow").animate({
+				'scrollLeft':"+=100px"
+			},2000);
+		});
+		
+	</script>
+	<style type="text/css">
+		.back-col{
+			background-color: #D0D0D0 ;
+		}
+		#flow li{
+			list-style-type: none;
+			height: 80px;
+			border:3px solid black;
+			margin-left: 5px;
+		}
+		#flow a{
+			color:red;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script src="js/jquery.min.js"></script>
+</html>
